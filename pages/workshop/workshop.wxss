@@ -1,0 +1,1 @@
+.info{display:flex;justify-content:space-between;border-bottom:1rpx solid #d1cdc5;padding:25rpx 0;font-size:25rpx}.info text:last-child{color:#737981}

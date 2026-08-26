@@ -1,0 +1,6 @@
+{
+  "pages":["pages/index/index","pages/person/person","pages/craft/craft","pages/craft-detail/craft-detail","pages/video/video","pages/video-detail/video-detail","pages/works/works","pages/work-detail/work-detail","pages/culture/culture","pages/brochure/brochure","pages/article/article","pages/article-detail/article-detail","pages/cultural/cultural","pages/workshop/workshop","pages/about/about"],
+  "window":{"navigationBarBackgroundColor":"#F4F0E8","navigationBarTextStyle":"black","navigationBarTitleText":"银光淬炼","backgroundColor":"#F4F0E8","backgroundTextStyle":"light"},
+  "tabBar":{"color":"#7A7E84","selectedColor":"#19263C","backgroundColor":"#F9F7F1","borderStyle":"white","list":[{"pagePath":"pages/index/index","text":"首页"},{"pagePath":"pages/craft/craft","text":"技艺"},{"pagePath":"pages/video/video","text":"影像"},{"pagePath":"pages/works/works","text":"作品"}]},
+  "style":"v2","sitemapLocation":"sitemap.json"
+}

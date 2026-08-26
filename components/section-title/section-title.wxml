@@ -1,0 +1,1 @@
+<view class="section-head"><view><view class="section-title">{{title}}</view><view class="section-en">{{en}}</view></view><view wx:if="{{more}}" class="more" bindtap="moreTap">{{more}} →</view></view>

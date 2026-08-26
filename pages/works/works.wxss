@@ -1,0 +1,1 @@
+.lead{margin-top:35rpx}.gallery{column-count:2;column-gap:18rpx;margin-top:42rpx}.work-item{break-inside:avoid;margin-bottom:18rpx;background:#faf8f3}.work-copy{padding:18rpx}.work-name{font-size:25rpx;font-weight:600}.pattern{font-size:19rpx;color:#737981;margin-top:7rpx}

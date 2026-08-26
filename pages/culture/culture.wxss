@@ -1,0 +1,1 @@
+.patterns{display:grid;grid-template-columns:1fr 1fr;gap:16rpx;margin-top:24rpx}.pattern-card{background:#e7e4de;padding:25rpx;font-size:26rpx;font-weight:600}.pending{font-size:19rpx;color:#737981;font-weight:400;margin-top:15rpx}

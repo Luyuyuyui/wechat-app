@@ -1,0 +1,1 @@
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28rpx}.section-title{font-size:38rpx;font-weight:700}.section-en{font-size:18rpx;color:#7b8087;letter-spacing:2rpx;margin-top:8rpx}.more{font-size:23rpx;color:#263750}

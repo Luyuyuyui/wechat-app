@@ -1,0 +1,1 @@
+const {works}=require('../../data/mock');Page({data:{work:{}},onLoad(q){this.setData({work:works.find(x=>x.id===+q.id)||works[0]})},craft(){wx.navigateTo({url:'/pages/craft/craft'})},video(){wx.navigateTo({url:'/pages/video-detail/video-detail?id='+this.data.work.videoId})}})

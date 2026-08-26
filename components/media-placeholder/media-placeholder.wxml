@@ -1,0 +1,1 @@
+<view class="placeholder media" style="height:{{height}}" bindtap="tap"><view class="placeholder-type">{{type}}</view><view class="placeholder-word">SILVER</view><view class="placeholder-word">{{type}}</view><view wx:if="{{play}}" class="play">▶</view><view class="placeholder-note">{{label}}</view></view>
