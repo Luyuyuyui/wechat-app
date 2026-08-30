@@ -1,1 +1,46 @@
-<view class="page"><view class="eyebrow">PROCESS {{craft.number}}</view><view class="page-title">{{craft.title}}</view><view class="page-en">FROM FIRE TO SILVER</view><view class="section"><media type="CRAFT {{craft.number}}" label="工艺图片待补充" height="610rpx"/></view><view class="section"><view class="section-title">工艺介绍</view><view class="intro">{{craft.description}}</view></view><view class="section film" bindtap="video"><view><view class="eyebrow">PROCESS FILM</view><view class="film-title">操作视频</view><view class="intro">视频素材正在整理，敬请期待。</view></view><view class="film-play">▶</view></view><view class="pager"><view wx:if="{{previous}}" bindtap="go" data-id="{{previous.id}}">← 上一步<br/><text>{{previous.title}}</text></view><view wx:else class="disabled">已是第一步</view><view wx:if="{{next}}" bindtap="go" data-id="{{next.id}}" class="right">下一步 →<br/><text>{{next.title}}</text></view><view wx:else class="disabled right">已是最后一步</view></view></view>
+<!-- 引入 wxs 模块，用于数字补零 -->
+<wxs module="format">
+  function toTwoDigits(n) {
+    n = n || 0;
+    return ('0' + n).slice(-2);
+  }
+  module.exports.toTwoDigits = toTwoDigits;
+</wxs>
+
+<view class="page">
+  <!-- 顶部 eyebrow：显示两位数字序号，例如 "01" -->
+  <view class="eyebrow">{{format.toTwoDigits(craft.number)}}</view>
+
+  <view class="page-title">{{craft.title}}</view>
+  <view class="page-en">FROM FIRE TO SILVER</view>
+
+  <view class="section">
+    <!-- 替换原 <media>，避免自动显示 "CRAFT 一" -->
+    <view class="placeholder" style="height:610rpx; display:flex; flex-direction:column; align-items:center; justify-content:center; background:linear-gradient(135deg,#263750,#75818c 50%,#c2c6c6);">
+      <view class="placeholder-note" style="font-size:30rpx; color:rgba(255,255,255,0.9);">工艺图片待补充</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">工艺介绍</view>
+    <view class="intro">{{craft.description}}</view>
+  </view>
+
+  <!-- 视频区域：eyebrow 改为固定文本 "视频资料" -->
+  <view class="section film" bindtap="video">
+    <view>
+      <view class="eyebrow">视频资料</view>   <!-- 原为 "PROCESS FILM" -->
+      <view class="film-title">操作视频</view>
+      <view class="intro">视频素材正在整理，敬请期待。</view>
+    </view>
+    <view class="film-play">▶</view>
+  </view>
+
+  <!-- 上下页导航保持不变 -->
+  <view class="pager">
+    <view wx:if="{{previous}}" bindtap="go" data-id="{{previous.id}}">← 上一步<br/><text>{{previous.title}}</text></view>
+    <view wx:else class="disabled">已是第一步</view>
+    <view wx:if="{{next}}" bindtap="go" data-id="{{next.id}}" class="right">下一步 →<br/><text>{{next.title}}</text></view>
+    <view wx:else class="disabled right">已是最后一步</view>
+  </view>
+</view>
