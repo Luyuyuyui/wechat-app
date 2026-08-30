@@ -1,1 +1,52 @@
-<view class="page"><view class="eyebrow">MOVING IMAGE</view><view class="page-title">影像</view><view class="page-en">THE LIGHT OF HANDCRAFT</view><scroll-view scroll-x class="tabs"><view class="tab-row"><block wx:for="{{tabs}}" wx:key="*this"><view class="tab {{active===item?'active':''}}" bindtap="filter" data-tab="{{item}}">{{item}}</view></block></view></scroll-view><view class="documentary" bindtap="go" data-id="1"><media type="DOCUMENTARY" label="视频封面待补充" height="450rpx" play="{{true}}"/><view class="doc-copy"><view class="eyebrow">10–15 MIN · DOCUMENTARY</view><view class="doc-title">《银光淬炼》</view><view class="intro">用影像记录一门正在传承的技艺</view></view></view><view class="section"><view class="section-title">全部影像</view><block wx:for="{{videos}}" wx:key="id"><view wx:if="{{item.id!==1}}" class="video-card" bindtap="go" data-id="{{item.id}}"><media type="FILM" label="视频封面待补充" height="300rpx" play="{{true}}"/><view class="v-copy"><view class="video-title">{{item.title}}</view><view class="video-meta">{{item.category}} · {{item.duration}}</view><view class="intro">{{item.description}}</view></view></view></block></view></view>
+<view class="page">
+  <!-- 顶部标题 -->
+  <view class="eyebrow">MOVING IMAGE</view>
+  <view class="page-title">影像</view>
+  <view class="page-en">THE LIGHT OF HANDCRAFT</view>
+
+  <!-- 分类标签 -->
+  <scroll-view scroll-x class="tabs">
+    <view class="tab-row">
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <view class="tab {{active===item?'active':''}}" bindtap="filter" data-tab="{{item}}">{{item}}</view>
+      </block>
+    </view>
+  </scroll-view>
+
+  <!-- 纪录片大卡片 -->
+  <view class="documentary" bindtap="go" data-id="1">
+    <!-- 替换原 <media>，自定义占位，显示播放按钮和提示 -->
+    <view class="placeholder" style="height:450rpx; display:flex; flex-direction:column; align-items:center; justify-content:center; background:linear-gradient(135deg,#263750,#75818c 50%,#c2c6c6); position:relative;">
+      <!-- 播放按钮（视觉模拟） -->
+      <view class="play" style="width:78rpx; height:78rpx; border-radius:50%; border:1rpx solid #fff; display:flex; align-items:center; justify-content:center; font-size:27rpx; color:#fff;">▶</view>
+      <!-- 提示文字 -->
+      <view class="placeholder-note" style="font-size:24rpx; color:rgba(255,255,255,0.8); margin-top:16rpx;">视频封面待补充</view>
+    </view>
+
+    <view class="doc-copy">
+      <view class="eyebrow">10–15 MIN · DOCUMENTARY</view>
+      <view class="doc-title">《银光淬炼》</view>
+      <view class="intro">用影像记录一门正在传承的技艺</view>
+    </view>
+  </view>
+
+  <!-- 全部影像列表 -->
+  <view class="section">
+    <view class="section-title">全部影像</view>
+    <block wx:for="{{videos}}" wx:key="id">
+      <view wx:if="{{item.id!==1}}" class="video-card" bindtap="go" data-id="{{item.id}}">
+        <!-- 替换原 <media> -->
+        <view class="placeholder" style="height:300rpx; display:flex; flex-direction:column; align-items:center; justify-content:center; background:linear-gradient(135deg,#263750,#75818c 50%,#c2c6c6); position:relative;">
+          <view class="play" style="width:68rpx; height:68rpx; border-radius:50%; border:1rpx solid #fff; display:flex; align-items:center; justify-content:center; font-size:24rpx; color:#fff;">▶</view>
+          <view class="placeholder-note" style="font-size:22rpx; color:rgba(255,255,255,0.8); margin-top:12rpx;">视频封面待补充</view>
+        </view>
+
+        <view class="v-copy">
+          <view class="video-title">{{item.title}}</view>
+          <view class="video-meta">{{item.category}} · {{item.duration}}</view>
+          <view class="intro">{{item.description}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
