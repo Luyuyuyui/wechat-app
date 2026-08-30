@@ -1,1 +1,27 @@
-<view class="page"><view class="eyebrow">FROM FIRE TO SILVER</view><view class="page-title">银饰锻造技艺</view><view class="page-en">A CRAFT IN SEVEN MOVEMENTS</view><view class="intro lead">从火与银开始，完成于手、锤与錾。每一道工序的真实介绍与影像，等待后续资料补充。</view><view class="craft-list"><block wx:for="{{crafts}}" wx:key="id"><view class="craft-card" bindtap="go" data-id="{{item.id}}"><media type="CRAFT {{item.number}}" label="工艺图片待补充" height="330rpx"/><view class="craft-copy"><view class="num">{{item.number}}</view><view class="craft-title">{{item.title}}</view><view class="intro">{{item.description}}</view><view class="watch">观看此工序　→</view></view></view></block></view></view>
+<view class="page">
+  <!-- 顶部：只显示 FROM FIRE TO SILVER，无多余内容 -->
+  <view class="eyebrow">FROM FIRE TO SILVER</view>
+
+  <view class="page-title">银饰锻造技艺</view>
+  <view class="page-en">A CRAFT IN SEVEN MOVEMENTS</view>
+  <view class="intro lead">从火与银开始，完成于手、锤与錾。每一道工序的真实介绍与影像，等待后续资料补充。</view>
+
+  <view class="craft-list">
+    <block wx:for="{{crafts}}" wx:key="id">
+      <view class="craft-card" bindtap="go" data-id="{{item.id}}">
+        <!-- 替换原 <media>，只显示图片占位，不再显示 "CRAFT 一" 等文字 -->
+        <view class="placeholder" style="height:330rpx; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+          <view class="placeholder-note" style="font-size:24rpx; color:rgba(255,255,255,0.9);">工艺图片待补充</view>
+        </view>
+
+        <view class="craft-copy">
+          <!-- 这里保留原有的工序编号（如“一”“二”），不会被任何文字覆盖 -->
+          <view class="num">{{item.number}}</view>
+          <view class="craft-title">{{item.title}}</view>
+          <view class="intro">{{item.description}}</view>
+          <view class="watch">观看此工序 →</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
