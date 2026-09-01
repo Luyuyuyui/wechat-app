@@ -1,8 +1,144 @@
-<view class="home"><view class="hero"><view class="hero-top"><view class="brand">银光淬炼</view><view class="brand-en">SILVER FORGING</view></view><view class="hero-copy"><view class="eyebrow light">苗族银饰锻造技艺</view><view class="hero-name">马贵兵</view><view class="hero-sub">【待补充身份资料】</view><view class="hero-title">银光淬炼</view><view class="hero-desc">一锤一錾，见证一门技艺的传承</view><view class="explore" bindtap="go" data-url="/pages/person/person">探索非遗技艺　→</view></view><view class="hero-note">人物 / 银饰锻造照片待补充</view></view><view class="page">
-<view class="section"><section title="传承人" en="THE INHERITOR" more="了解更多" bind:more="go" data-url="/pages/person/person"/><view class="person-card" bindtap="go" data-url="/pages/person/person"><media type="INHERITOR" label="人物照片待补充" height="390rpx"/><view class="person-copy"><view class="person-name">马贵兵</view><view class="identity">{{person.identity}}</view><view class="intro">{{person.bio}}</view></view></view></view>
-<view class="section"><section title="一件银饰，如何诞生？" en="FROM FIRE TO SILVER" more="完整工艺" bind:more="go" data-url="/pages/craft/craft"/><view class="process"><block wx:for="{{crafts}}" wx:key="id"><view class="process-row" bindtap="go" data-url="/pages/craft-detail/craft-detail?id={{item.id}}"><view class="stepno">{{item.number}}</view><view class="stepname">{{item.title}}</view><view class="arrow">↗</view></view></block></view></view>
-<view class="section"><section title="银光淬炼" en="MOVING IMAGE" more="全部影像" bind:more="go" data-url="/pages/video/video"/><scroll-view scroll-x class="video-scroll"><view class="video-row"><block wx:for="{{videos}}" wx:key="id"><view class="mini-video" bindtap="go" data-url="/pages/video-detail/video-detail?id={{item.id}}"><media type="FILM" label="视频封面待补充" height="270rpx" play="{{true}}"/><view class="mini-copy"><view class="video-title">{{item.title}}</view><view class="video-meta">{{item.category}} · {{item.duration}}</view></view></view></block></view></scroll-view></view>
-<view class="section"><section title="银饰之美" en="SILVER ART" more="浏览作品" bind:more="go" data-url="/pages/works/works"/><view class="work-grid"><block wx:for="{{works}}" wx:key="id"><view class="work" bindtap="go" data-url="/pages/work-detail/work-detail?id={{item.id}}"><media type="SILVER ART" label="作品图片待补充" height="260rpx"/><view>{{item.name}}</view></view></block></view></view>
-<view class="section culture-banner" bindtap="go" data-url="/pages/culture/culture"><view class="eyebrow">CULTURE IN SILVER</view><view class="culture-title">银饰里的苗族文化</view><view class="intro">【待补充：苗族银饰文化资料】</view><view class="culture-links"><text>纹样</text><text>银饰</text><text>节庆</text><text>传承</text></view></view>
-<view class="section booklet" bindtap="go" data-url="/pages/brochure/brochure"><view><view class="eyebrow">BILINGUAL BOOKLET</view><view class="book-title">《银光淬炼》</view><view class="intro">双语非遗文化宣传册</view><view class="ghost-btn">开始阅读　→</view></view><view class="book-cover">银<br/>光<br/>淬<br/>炼</view></view>
-<view class="section record" bindtap="go" data-url="/pages/article/article"><view class="eyebrow">OUR RECORD</view><view class="section-title">我们的记录　→</view><view class="intro">实践动态 · 采访文章 · 文化观察 · 项目成果</view></view><view class="exhibit-links"><view bindtap="go" data-url="/pages/cultural/cultural">文创展示　→</view><view bindtap="go" data-url="/pages/workshop/workshop">工坊信息　→</view><view bindtap="go" data-url="/pages/about/about">关于项目　→</view></view><view class="safe-bottom"/></view></view>
+<view class="home">
+  <!-- HERO -->
+  <view class="hero">
+    <image class="hero-bg" src="/assets/images/hero/cover.jpg" mode="aspectFill" />
+    <view class="hero-mask"></view>
+    <view class="hero-top">
+      <view class="brand">银光淬炼</view>
+      <view class="brand-en">SILVER FORGING</view>
+    </view>
+    <view class="hero-copy">
+      <view class="eyebrow light">苗族银饰锻造技艺</view>
+      <view class="hero-name">马贵兵</view>
+      <view class="hero-sub">{{person.identity}}</view>
+      <view class="hero-title">银光淬炼</view>
+      <view class="hero-desc">一锤一錾，见证一门技艺的传承</view>
+      <view class="explore" bindtap="go" data-url="/pages/person/person">探索非遗技艺　→</view>
+    </view>
+    <view class="hero-eyebrow">项目主视觉 · 苗族银头饰（局部）</view>
+  </view>
+
+  <view class="page">
+    <!-- 我们的记录 -->
+    <view class="section">
+      <section title="我们的记录" en="OUR OWN RECORD" more="查看全部" bind:more="go" data-url="/pages/video/video"/>
+      <view class="interview-feature" bindtap="go" data-url="/pages/video/video?focus=ours">
+        <image class="interview-img" src="/assets/images/video/poster-11.jpg" mode="aspectFill" />
+        <view class="play">▶</view>
+        <view class="badge">OUR RECORD</view>
+        <view class="interview-copy">
+          <view class="interview-title">《马贵兵口述访谈》</view>
+          <view class="interview-meta">访谈 · 19:34 · 本项目团队实地拍摄</view>
+          <view class="interview-desc">项目团队前往融水苗族自治县，与马贵兵老师面对面访谈，记录其学艺、返乡创业、带徒传承与非遗推广的真实经历。</view>
+        </view>
+      </view>
+      <view class="record-row">
+        <view class="record-mini" bindtap="go" data-url="/pages/video-detail/video-detail?id=10">
+          <image src="/assets/images/video/poster-10.jpg" mode="aspectFill" />
+          <view class="play small">▶</view>
+          <view class="record-mini-title">马贵兵老师个人自述</view>
+          <view class="record-mini-meta">人物 · 03:14</view>
+        </view>
+        <view class="record-mini" bindtap="go" data-url="/pages/article/article">
+          <image src="/assets/images/person/teaching-1.jpg" mode="aspectFill" />
+          <view class="record-mini-title">进校园宣讲影像</view>
+          <view class="record-mini-meta">融水镇城北小学 · 2025-11</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 传承人 -->
+    <view class="section">
+      <section title="传承人" en="THE INHERITOR" more="了解更多" bind:more="go" data-url="/pages/person/person"/>
+      <view class="person-card" bindtap="go" data-url="/pages/person/person">
+        <media height="390rpx" image="/assets/images/person/teaching-1.jpg" tag="INHERITOR" label="马贵兵老师带学生体验拉丝"/>
+        <view class="person-copy">
+          <view class="person-name">马贵兵</view>
+          <view class="identity">{{person.identity}}</view>
+          <view class="intro">{{person.bio}}</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 工艺 -->
+    <view class="section">
+      <section title="一件银饰，如何诞生？" en="FROM FIRE TO SILVER" more="完整工艺" bind:more="go" data-url="/pages/craft/craft"/>
+      <view class="process">
+        <block wx:for="{{crafts}}" wx:key="id">
+          <view class="process-row" bindtap="go" data-url="/pages/craft-detail/craft-detail?id={{item.id}}">
+            <view class="stepno">{{item.number}}</view>
+            <view class="stepname">{{item.title}}</view>
+            <view class="arrow">↗</view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <!-- 银饰之美 -->
+    <view class="section">
+      <section title="银饰之美" en="SILVER ART" more="浏览作品" bind:more="go" data-url="/pages/works/works"/>
+      <view class="work-grid">
+        <block wx:for="{{works}}" wx:key="id">
+          <view class="work" bindtap="go" data-url="/pages/work-detail/work-detail?id={{item.id}}">
+            <media height="260rpx" image="{{item.cover}}" tag="{{item.type}}"/>
+            <view>{{item.name}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <!-- 影像资料 -->
+    <view class="section">
+      <section title="银光淬炼 · 影像资料" en="MOVING IMAGE" more="全部影像" bind:more="go" data-url="/pages/video/video"/>
+      <scroll-view scroll-x class="video-scroll">
+        <view class="video-row">
+          <block wx:for="{{videos}}" wx:key="id">
+            <view class="mini-video" bindtap="go" data-url="/pages/video-detail/video-detail?id={{item.id}}">
+              <media height="270rpx" image="{{item.cover}}" play="{{true}}" tag="{{item.category}}"/>
+              <view class="mini-copy">
+                <view class="video-title">{{item.title}}</view>
+                <view class="video-meta">{{item.category}} · {{item.duration}}</view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+
+    <!-- 文化 banner -->
+    <view class="section">
+      <view class="culture-banner" bindtap="go" data-url="/pages/culture/culture">
+        <view class="eyebrow">CULTURE IN SILVER</view>
+        <view class="culture-title">银饰里的苗族文化</view>
+        <view class="intro">苗族银饰锻制技艺于 2006 年列入第一批国家级非物质文化遗产名录（编号Ⅷ-40）。</view>
+        <view class="culture-links"><text>纹样</text><text>银饰</text><text>节庆</text><text>传承</text></view>
+      </view>
+    </view>
+
+    <!-- 宣传册 -->
+    <view class="section booklet" bindtap="go" data-url="/pages/brochure/brochure">
+      <view>
+        <view class="eyebrow">BILINGUAL BOOKLET</view>
+        <view class="book-title">《银光淬炼》</view>
+        <view class="intro">中英双语非遗文化宣传册 · 六章</view>
+        <view class="ghost-btn">开始阅读　→</view>
+      </view>
+      <view class="book-cover">银<br/>光<br/>淬<br/>炼</view>
+    </view>
+
+    <!-- 记录 -->
+    <view class="section record" bindtap="go" data-url="/pages/article/article">
+      <view class="eyebrow">OUR RECORD</view>
+      <view class="section-title">我们的记录　→</view>
+      <view class="intro">实践动态 · 采访文章 · 文化观察 · 项目成果</view>
+    </view>
+
+    <view class="exhibit-links">
+      <view bindtap="go" data-url="/pages/cultural/cultural">文创展示　→</view>
+      <view bindtap="go" data-url="/pages/workshop/workshop">工坊信息　→</view>
+      <view bindtap="go" data-url="/pages/about/about">关于项目　→</view>
+    </view>
+
+    <view class="safe-bottom"/>
+  </view>
+</view>

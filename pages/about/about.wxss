@@ -1,1 +1,17 @@
-.about-hero{height:340rpx;background:#233750;color:#fff;padding:35rpx;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;font-size:60rpx;font-weight:700;letter-spacing:8rpx;line-height:1.1}.about-hero text{font-size:20rpx;letter-spacing:3rpx;font-weight:400;color:#cad0d7}
+.about-hero{position:relative;height:460rpx;margin:0 -32rpx;color:#fff;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.about-hero image{position:absolute;inset:0;width:100%;height:100%}
+.about-hero .mask{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(35,53,80,.85) 100%)}
+.about-hero-text{position:relative;z-index:2;padding:40rpx 35rpx 0;font-size:60rpx;font-weight:700;letter-spacing:6rpx;line-height:1.1}
+.about-hero-text .hero-name{font-size:22rpx;letter-spacing:4rpx;font-weight:500;opacity:.85;margin-bottom:14rpx}
+.hero-foot{position:relative;z-index:2;padding:0 35rpx 32rpx;font-size:20rpx;letter-spacing:3rpx;color:#cad0d7}
+
+.info{display:flex;justify-content:space-between;border-bottom:1rpx solid #d1cdc5;padding:25rpx 0;font-size:25rpx}
+.info text:last-child{color:#737981}
+
+.ach{display:grid;grid-template-columns:1fr 1fr;gap:18rpx;margin-top:18rpx}
+.ach-item{background:#faf8f3;padding:24rpx 26rpx;border-radius:6rpx}
+.ach-num{font-size:50rpx;font-weight:700;color:#8d3c3c;letter-spacing:2rpx}
+.ach-label{margin-top:6rpx;font-size:24rpx;font-weight:600;color:#263750}
+.ach-text{margin-top:10rpx;font-size:21rpx;line-height:1.7;color:#555d66}
+
+.safe-bottom{height:60rpx}

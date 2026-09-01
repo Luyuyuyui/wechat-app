@@ -1,1 +1,35 @@
-<view class="book-page"><view class="switch" bindtap="switch">{{lang}}　↔</view><view class="cover"><view class="cover-en">SILVER FORGING</view><view class="cover-title">银光<br/>淬炼</view><view class="cover-sub">双语非遗文化宣传册</view><view class="cover-note">宣传册封面待补充</view></view><view class="content"><view class="eyebrow">DIGITAL BOOKLET</view><view class="page-title">目录</view><block wx:for="{{chapters}}" wx:key="*this"><view class="chapter"><text>0{{index+1}}</text><view>{{item}}</view><text>→</text></view></block><view class="empty">【宣传册内容待补充】</view></view></view>
+<view class="book-page">
+  <view class="switch" bindtap="switch">{{lang==='中文'?'中':'EN'}}　↔</view>
+
+  <view class="cover">
+    <image src="/assets/images/hero/cover.jpg" mode="aspectFill" />
+    <view class="mask"></view>
+    <view class="cover-inner">
+      <view class="cover-en">SILVER FORGING</view>
+      <view class="cover-title">银光<br/>淬炼</view>
+      <view class="cover-sub">{{lang==='中文'?'双语非遗文化宣传册':'Bilingual ICH Booklet'}}</view>
+    </view>
+    <view class="cover-note">{{lang==='中文'?'宣传册主视觉 · 苗族银头饰':'Cover · Miao Silver Headdress'}}</view>
+  </view>
+
+  <view class="content">
+    <view class="eyebrow">DIGITAL BOOKLET</view>
+    <view class="page-title">{{lang==='中文'?'目录':'Contents'}}</view>
+    <view class="page-en">06 CHAPTERS</view>
+
+    <block wx:for="{{chapters}}" wx:key="eyebrow">
+      <view class="chapter">
+        <view class="chapter-eyebrow">{{item.eyebrow}}</view>
+        <view class="chapter-body">
+          <view class="chapter-title">{{item.title}}</view>
+          <view class="chapter-text">{{item.text}}</view>
+        </view>
+      </view>
+    </block>
+
+    <view class="end">
+      <view class="end-line"></view>
+      <view class="end-text">{{lang==='中文'?'青助乡村兴 · 融水苗族非遗实践团队':'Qingzhu Rural Vitality · Rongshui ICH Practice'}}</view>
+    </view>
+  </view>
+</view>

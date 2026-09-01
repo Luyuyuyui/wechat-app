@@ -1,1 +1,9 @@
-.lead{margin-top:35rpx}.cards{margin-top:42rpx}.design{margin-bottom:30rpx;background:#faf8f3}.design-title{font-size:33rpx;font-weight:700;padding:25rpx 25rpx 9rpx}.design .intro{padding:0 25rpx 25rpx}
+.lead{margin-top:38rpx}
+.cards{margin-top:42rpx}
+.design{margin-bottom:30rpx;background:#faf8f3;border-radius:6rpx;overflow:hidden;box-shadow:0 6rpx 18rpx rgba(25,38,60,.06)}
+.design-img{position:relative;height:370rpx}
+.design-img image{width:100%;height:100%;display:block}
+.design-no{position:absolute;left:22rpx;top:22rpx;background:rgba(35,53,80,.85);color:#fff;font-size:20rpx;letter-spacing:3rpx;padding:7rpx 13rpx;font-weight:600}
+.design-body{padding:24rpx 28rpx 30rpx}
+.design-title{font-size:34rpx;font-weight:700;letter-spacing:1rpx}
+.design-intro{margin-top:10rpx;font-size:24rpx;line-height:1.85;color:#555d66}

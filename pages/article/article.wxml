@@ -1,1 +1,29 @@
-<view class="page"><view class="eyebrow">OUR RECORD</view><view class="page-title">记录</view><view class="page-en">FIELD NOTES & CULTURAL OBSERVATIONS</view><view class="article-list"><block wx:for="{{articles}}" wx:key="id"><view class="article" bindtap="go" data-id="{{item.id}}"><media type="RECORD" label="文章封面待补充" height="250rpx"/><view class="article-copy"><view class="tag">{{item.category}}</view><view class="article-title">{{item.title}}</view><view class="intro">{{item.summary}}</view><view class="date">{{item.date}}　→</view></view></view></block></view></view>
+<view class="page">
+  <view class="eyebrow">OUR RECORD</view>
+  <view class="page-title">记录</view>
+  <view class="page-en">FIELD NOTES & CULTURAL OBSERVATIONS</view>
+
+  <scroll-view scroll-x class="tabs">
+    <view class="tab-row">
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <view class="tab {{active===item?'active':''}}" bindtap="filter" data-tab="{{item}}">{{item}}</view>
+      </block>
+    </view>
+  </scroll-view>
+
+  <view class="article-list">
+    <block wx:for="{{filtered}}" wx:key="id">
+      <view class="article" bindtap="go" data-id="{{item.id}}">
+        <view class="article-img">
+          <image src="{{item.cover}}" mode="aspectFill" />
+          <view class="article-tag">{{item.category}}</view>
+        </view>
+        <view class="article-copy">
+          <view class="article-title">{{item.title}}</view>
+          <view class="article-summary">{{item.summary}}</view>
+          <view class="article-meta">{{item.author}} · {{item.date}}　→</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

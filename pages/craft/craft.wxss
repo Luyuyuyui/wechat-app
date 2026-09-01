@@ -1,1 +1,9 @@
-.lead{margin-top:38rpx}.craft-list{margin-top:46rpx}.craft-card{margin-bottom:30rpx;background:#faf8f3;box-shadow:0 8rpx 20rpx rgba(25,38,60,.06)}.craft-copy{padding:25rpx 28rpx 28rpx;position:relative}.num{font-size:20rpx;color:#8d3c3c;letter-spacing:3rpx}.craft-title{font-size:37rpx;font-weight:700;margin:8rpx 0}.watch{font-size:23rpx;color:#263750;margin-top:23rpx}
+.lead{margin-top:38rpx}
+.craft-list{margin-top:46rpx}
+.craft-card{margin-bottom:30rpx;background:#faf8f3;box-shadow:0 8rpx 20rpx rgba(25,38,60,.06);border-radius:6rpx;overflow:hidden}
+.craft-media{position:relative;height:330rpx}
+.craft-media image{width:100%;height:100%;display:block}
+.craft-no{position:absolute;left:24rpx;top:24rpx;background:rgba(35,53,80,.85);color:#fff;font-size:20rpx;letter-spacing:3rpx;padding:8rpx 14rpx;font-weight:600}
+.craft-copy{padding:25rpx 28rpx 28rpx}
+.craft-title{font-size:38rpx;font-weight:700}
+.watch{font-size:23rpx;color:#263750;margin-top:24rpx;border-top:1rpx solid #d1cdc5;padding-top:22rpx}

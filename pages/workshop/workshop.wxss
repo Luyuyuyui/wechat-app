@@ -1,1 +1,22 @@
-.info{display:flex;justify-content:space-between;border-bottom:1rpx solid #d1cdc5;padding:25rpx 0;font-size:25rpx}.info text:last-child{color:#737981}
+.hero{position:relative;height:480rpx;margin:0 -32rpx;color:#fff;overflow:hidden}
+.hero image{position:absolute;inset:0;width:100%;height:100%}
+.hero .mask{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.0) 30%,rgba(0,0,0,.75) 100%)}
+.hero-text{position:absolute;left:36rpx;right:36rpx;bottom:36rpx;z-index:2}
+.hero-text .eyebrow{color:#e5d5cd;font-size:18rpx;letter-spacing:3rpx}
+.hero-text .hero-name{font-size:48rpx;font-weight:700;letter-spacing:4rpx;margin-top:14rpx;text-shadow:0 4rpx 12rpx rgba(0,0,0,.4)}
+.hero-text .hero-sub{margin-top:10rpx;font-size:22rpx;letter-spacing:1rpx}
+.light{color:#fff}
+
+.loc-card{background:#faf8f3;padding:24rpx 28rpx;border-radius:6rpx;margin-bottom:14rpx}
+.loc-name{font-size:28rpx;font-weight:700;color:#263750}
+.loc-city{margin-top:8rpx;font-size:22rpx;color:#737981;letter-spacing:1rpx}
+
+.svc-row{padding:18rpx 0;border-bottom:1rpx solid #cbc7bf;font-size:26rpx;line-height:1.55;color:#3f464e}
+.svc-row:before{content:"·";color:#8d3c3c;margin-right:12rpx;font-size:32rpx;vertical-align:-2rpx}
+
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:16rpx;margin-top:18rpx}
+.photo-card{border-radius:4rpx;overflow:hidden;background:#faf8f3}
+.photo-card image{width:100%;height:280rpx;display:block}
+
+.notice{background:#233750;color:#fff;padding:30rpx;margin:30rpx -32rpx;border-radius:0}
+.notice .intro{color:#c9d0d8;font-size:24rpx;line-height:1.85}

@@ -1,1 +1,2 @@
-Page({data:{items:[['定制包装盒','包装盒设计图待补充'],['纹样腰封','纹样腰封设计图待补充'],['银饰故事卡','故事卡设计图待补充']]}})
+const {culturalDesign} = require('../../data/mock')
+Page({data:{items:culturalDesign}})

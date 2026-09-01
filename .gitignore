@@ -1,0 +1,17 @@
+# ——— 超大原始素材：不进仓库，push 会被 GitHub 拒绝 ———
+# 团队访谈原片（3.3 GB，GitHub 单文件上限 100MB）
+/materials/interview/
+
+# 由 materials/videos/ 派生、供模拟器本地预览用的副本（191 MB）
+/assets/videos/
+
+# ——— 中间产物 / 缓存 ———
+.DS_Store
+Thumbs.db
+*.log
+.workbuddy-ai/
+
+# ——— 编辑器 ———
+.idea/
+.vscode/
+*.swp

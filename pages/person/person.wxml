@@ -1,1 +1,81 @@
-<view class="page"><view class="eyebrow">THE INHERITOR</view><view class="page-title">马贵兵</view><view class="page-en">MIAO SILVER CRAFT</view><view class="section"><media type="INHERITOR" label="人物照片待补充" height="560rpx"/></view><view class="section"><view class="label">身份</view><view class="page-title small">{{person.identity}}</view></view><view class="section"><view class="section-title">人物简介</view><view class="intro">{{person.bio}}</view></view><view class="section"><view class="section-title">主要事迹</view><view class="timeline"><block wx:for="{{person.experiences}}" wx:key="0"><view class="dot"></view><view class="stage">{{item[0]}}<view class="pending">{{item[1]}}</view></view></block></view></view><view class="section honor"><view class="section-title">主要荣誉</view><view class="intro">{{person.honors}}</view><view class="honor-note">获奖现场照片 / 视频待补充</view></view><view class="section"><view class="section-title">守艺之路</view><view class="timeline"><block wx:for="{{stages}}" wx:key="*this"><view class="dot"></view><view class="stage">{{item}}<view class="pending">【待补充】</view></view></block></view></view></view>
+<view class="page">
+  <view class="hero-strip">
+    <image src="/assets/images/person/teaching-1.jpg" mode="aspectFill" />
+    <view class="hero-mask"></view>
+    <view class="hero-text">
+      <view class="eyebrow light">THE INHERITOR · MIAO SILVER CRAFT</view>
+      <view class="hero-name">{{person.name}}</view>
+      <view class="hero-sub">{{person.identity}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="label">身份</view>
+    <view class="page-title small">{{person.identity}}</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">人物简介</view>
+    <view class="intro">{{person.bio}}</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">主要事迹</view>
+    <view class="timeline">
+      <block wx:for="{{person.experiences}}" wx:key="index">
+        <view class="dot"></view>
+        <view class="stage">
+          {{item[0]}}
+          <view class="stage-body">{{item[1]}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="section honor">
+    <view class="section-title">主要荣誉</view>
+    <view class="honor-block">
+      <view class="honor-label">非遗传承人层级</view>
+      <block wx:for="{{person.honors.heritage}}" wx:key="*this">
+        <view class="honor-line">{{item}}</view>
+      </block>
+    </view>
+    <view class="honor-block">
+      <view class="honor-label">工匠 · 劳模 · 专家</view>
+      <block wx:for="{{person.honors.titles}}" wx:key="*this">
+        <view class="honor-line">{{item}}</view>
+      </block>
+    </view>
+    <view class="honor-block">
+      <view class="honor-label">作品获奖与成果</view>
+      <view class="honor-line">{{person.honors.awards}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">讲学足迹</view>
+    <view class="intro">马贵兵长期走进本地各中小学、高校开展非遗公益课堂与研学实践活动。图为 2025 年 11 月在融水镇城北小学的宣讲现场。</view>
+    <view class="teaching-grid">
+      <block wx:for="{{person.teaching}}" wx:key="index">
+        <view class="teaching-card">
+          <image src="{{item.image}}" mode="aspectFill" />
+          <view class="teaching-cap">{{item.caption}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">媒体报道</view>
+    <view class="media-list">
+      <view class="media-row">文化和旅游部官方平台</view>
+      <view class="media-row">人民政协网</view>
+      <view class="media-row">广西民族报</view>
+      <view class="media-row">广西新闻网</view>
+      <view class="media-row">广西文明网</view>
+      <view class="media-row">南国今报</view>
+    </view>
+  </view>
+
+  <view class="safe-bottom"/>
+</view>

@@ -1,1 +1,2 @@
-const {culture}=require('../../data/mock');Page({data:{culture}})
+const {culture} = require('../../data/mock')
+Page({data:{culture}})

@@ -1,1 +1,61 @@
-<view class="page"><view class="eyebrow">CULTURE IN SILVER</view><view class="page-title">银饰里的苗族文化</view><view class="page-en">A CULTURAL ARCHIVE</view><view class="section"><media type="CULTURE" label="文化图片待补充" height="440rpx"/></view><view class="section"><view class="section-title">银饰文化</view><view class="intro">【待补充：苗族银饰文化资料】</view></view><view class="section"><view class="section-title">代表纹样</view><view class="patterns"><block wx:for="{{culture.patterns}}" wx:key="id"><view class="pattern-card"><media type="PATTERN" label="纹样代表图待补充" height="150rpx"/><view class="pattern-name">{{item.name}}</view><view class="pending">{{item.meaning}}</view></view></block></view></view><view class="section"><view class="section-title">历史渊源</view><view class="intro">{{culture.history}}</view></view><view class="section"><view class="section-title">节庆与佩戴情景</view><view class="intro">【节庆盛装、婚嫁佩戴银饰、苗寨风貌资料待补充】</view></view><view class="section"><view class="section-title">保护现状</view><view class="intro">{{culture.protection}}</view></view></view>
+<view class="page">
+  <view class="eyebrow">CULTURE IN SILVER</view>
+  <view class="page-title">银饰里的苗族文化</view>
+  <view class="page-en">A CULTURAL ARCHIVE</view>
+
+  <view class="culture-banner">
+    <image src="/assets/images/works/work-05-cover.jpg" mode="aspectFill" />
+    <view class="mask"></view>
+    <view class="culture-text">
+      <view class="eyebrow light">2006 · 第一批国家级非物质文化遗产</view>
+      <view class="culture-title">苗族银饰锻制技艺</view>
+      <view class="culture-meta">编号Ⅷ-40 · 银光里的无字史诗</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">历史渊源</view>
+    <view class="intro">{{culture.history}}</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">代表纹样</view>
+    <view class="patterns">
+      <block wx:for="{{culture.patterns}}" wx:key="id">
+        <view class="pattern-card">
+          <view class="pattern-img">
+            <image src="{{item.cover}}" mode="aspectFill" />
+            <view class="pattern-no">{{item.id}}</view>
+          </view>
+          <view class="pattern-name">{{item.name}}</view>
+          <view class="pattern-meaning">{{item.meaning}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">节庆与佩戴情景</view>
+    <view class="intro">苗族银饰在节庆、婚嫁、祭祀等重要场合佩戴，"以多为贵、以重为美、以大为美"。头饰、项圈、手镯、耳环共同构成盛装视觉中心。</view>
+    <view class="scene-row">
+      <view class="scene-card">
+        <image src="/assets/images/video/poster-03.jpg" mode="aspectFill" />
+        <view class="scene-cap">苗寨风情 · 节庆盛装</view>
+      </view>
+      <view class="scene-card">
+        <image src="/assets/images/video/poster-04.jpg" mode="aspectFill" />
+        <view class="scene-cap">节庆现场 · 银饰佩戴</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">保护现状</view>
+    <view class="intro">{{culture.protection}}</view>
+  </view>
+
+  <view class="section challenge">
+    <view class="section-title light">现实困境</view>
+    <view class="intro light">{{culture.challenges}}</view>
+  </view>
+</view>

@@ -1,1 +1,36 @@
-<view class="page"><view class="eyebrow">PROCESS {{craft.number}}</view><view class="page-title">{{craft.title}}</view><view class="page-en">FROM FIRE TO SILVER</view><view class="section"><media type="CRAFT {{craft.number}}" label="工艺图片待补充" height="610rpx"/></view><view class="section"><view class="section-title">工艺介绍</view><view class="intro">{{craft.description}}</view></view><view class="section film" bindtap="video"><view><view class="eyebrow">PROCESS FILM</view><view class="film-title">操作视频</view><view class="intro">视频素材正在整理，敬请期待。</view></view><view class="film-play">▶</view></view><view class="pager"><view wx:if="{{previous}}" bindtap="go" data-id="{{previous.id}}">← 上一步<br/><text>{{previous.title}}</text></view><view wx:else class="disabled">已是第一步</view><view wx:if="{{next}}" bindtap="go" data-id="{{next.id}}" class="right">下一步 →<br/><text>{{next.title}}</text></view><view wx:else class="disabled right">已是最后一步</view></view></view>
+<view class="page">
+  <view class="hero-image">
+    <image src="{{craft.cover}}" mode="aspectFill" />
+    <view class="hero-mask"></view>
+    <view class="hero-no">PROCESS {{craft.number}}</view>
+  </view>
+
+  <view class="section">
+    <view class="page-title">{{craft.title}}</view>
+    <view class="page-en">FROM FIRE TO SILVER</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">工艺介绍</view>
+    <view class="intro">{{craft.description}}</view>
+  </view>
+
+  <view class="section film" bindtap="video">
+    <view>
+      <view class="eyebrow">PROCESS FILM</view>
+      <view class="film-title">操作视频</view>
+      <view class="intro">点此查看该工序相关影像。</view>
+    </view>
+    <view class="film-play">▶</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">其他工艺</view>
+    <view class="pager">
+      <view wx:if="{{previous}}" bindtap="go" data-id="{{previous.id}}">← 上一步<br/><text>{{previous.title}}</text></view>
+      <view wx:else class="disabled">已是第一步</view>
+      <view wx:if="{{next}}" bindtap="go" data-id="{{next.id}}" class="right">下一步 →<br/><text>{{next.title}}</text></view>
+      <view wx:else class="disabled right">已是最后一步</view>
+    </view>
+  </view>
+</view>

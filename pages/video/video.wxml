@@ -1,1 +1,68 @@
-<view class="page"><view class="eyebrow">MOVING IMAGE</view><view class="page-title">影像</view><view class="page-en">THE LIGHT OF HANDCRAFT</view><scroll-view scroll-x class="tabs"><view class="tab-row"><block wx:for="{{tabs}}" wx:key="*this"><view class="tab {{active===item?'active':''}}" bindtap="filter" data-tab="{{item}}">{{item}}</view></block></view></scroll-view><view class="documentary" bindtap="go" data-id="1"><media type="DOCUMENTARY" label="视频封面待补充" height="450rpx" play="{{true}}"/><view class="doc-copy"><view class="eyebrow">10–15 MIN · DOCUMENTARY</view><view class="doc-title">《银光淬炼》</view><view class="intro">用影像记录一门正在传承的技艺</view></view></view><view class="section"><view class="section-title">全部影像</view><block wx:for="{{videos}}" wx:key="id"><view wx:if="{{item.id!==1}}" class="video-card" bindtap="go" data-id="{{item.id}}"><media type="FILM" label="视频封面待补充" height="300rpx" play="{{true}}"/><view class="v-copy"><view class="video-title">{{item.title}}</view><view class="video-meta">{{item.category}} · {{item.duration}}</view><view class="intro">{{item.description}}</view></view></view></block></view></view>
+<view class="page">
+  <view class="eyebrow">MOVING IMAGE</view>
+  <view class="page-title">影像</view>
+  <view class="page-en">THE LIGHT OF HANDCRAFT</view>
+
+  <!-- 我们的记录 -->
+  <view class="group">
+    <view class="group-head">
+      <view class="group-title">我们的记录</view>
+      <view class="group-en">OUR OWN RECORD</view>
+    </view>
+    <view class="our-feature" bindtap="go" data-id="11">
+      <image src="/assets/images/video/poster-11.jpg" mode="aspectFill" />
+      <view class="mask"></view>
+      <view class="badge">OUR RECORD</view>
+      <view class="play">▶</view>
+      <view class="our-copy">
+        <view class="our-title">《马贵兵口述访谈》</view>
+        <view class="our-meta">访谈 · 19:34</view>
+        <view class="our-desc">本项目团队实地拍摄 · 广西融水梦呜苗寨</view>
+      </view>
+    </view>
+    <view class="our-row">
+      <view class="our-mini" bindtap="go" data-id="10">
+        <image src="/assets/images/video/poster-10.jpg" mode="aspectFill" />
+        <view class="play small">▶</view>
+        <view class="badge">OUR RECORD</view>
+        <view class="our-mini-title">马贵兵老师个人自述</view>
+        <view class="our-mini-meta">03:14 · 秀美融水风情苗乡视频号</view>
+      </view>
+      <view class="our-mini" bindtap="go" data-id="1">
+        <image src="/assets/images/video/poster-01.jpg" mode="aspectFill" />
+        <view class="play small">▶</view>
+        <view class="badge">EXPERIENCE</view>
+        <view class="our-mini-title">奥运冠军体验苗饰制作</view>
+        <view class="our-mini-meta">00:10 · 融水文旅</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 影像资料 -->
+  <view class="group">
+    <view class="group-head">
+      <view class="group-title">影像资料</view>
+      <view class="group-en">FOOTAGE ARCHIVE</view>
+    </view>
+
+    <scroll-view scroll-x class="tabs">
+      <view class="tab-row">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view class="tab {{active===item?'active':''}}" bindtap="filter" data-tab="{{item}}">{{item}}</view>
+        </block>
+      </view>
+    </scroll-view>
+
+    <view class="grid">
+      <block wx:for="{{filtered}}" wx:key="id">
+        <view class="grid-item" bindtap="go" data-id="{{item.id}}">
+          <media height="240rpx" image="{{item.cover}}" play="{{true}}" tag="{{item.category}}"/>
+          <view class="grid-copy">
+            <view class="grid-title">{{item.title}}</view>
+            <view class="grid-meta">{{item.category}} · {{item.duration}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

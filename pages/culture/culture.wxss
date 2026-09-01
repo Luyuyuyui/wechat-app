@@ -1,1 +1,25 @@
-.patterns{display:grid;grid-template-columns:1fr 1fr;gap:16rpx;margin-top:24rpx}.pattern-card{background:#e7e4de;padding:25rpx;font-size:26rpx;font-weight:600}.pending{font-size:19rpx;color:#737981;font-weight:400;margin-top:15rpx}
+.culture-banner{position:relative;height:440rpx;margin-top:34rpx;border-radius:6rpx;overflow:hidden;color:#fff}
+.culture-banner image{position:absolute;inset:0;width:100%;height:100%}
+.culture-banner .mask{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.0) 30%,rgba(0,0,0,.7) 100%)}
+.culture-text{position:absolute;left:36rpx;right:36rpx;bottom:32rpx}
+.culture-text .eyebrow{color:#e5d5cd;font-size:18rpx;letter-spacing:3rpx}
+.culture-text .culture-title{font-size:48rpx;font-weight:700;letter-spacing:4rpx;margin-top:14rpx;text-shadow:0 4rpx 12rpx rgba(0,0,0,.35)}
+.culture-text .culture-meta{margin-top:8rpx;font-size:22rpx;color:#d6dce4}
+
+.light{color:#fff}
+
+.patterns{display:grid;grid-template-columns:1fr 1fr;gap:16rpx;margin-top:24rpx}
+.pattern-card{background:#e7e4de;padding:18rpx 20rpx 22rpx;border-radius:4rpx}
+.pattern-img{position:relative;height:240rpx;border-radius:3rpx;overflow:hidden;margin-bottom:14rpx}
+.pattern-img image{width:100%;height:100%;display:block}
+.pattern-no{position:absolute;right:12rpx;top:12rpx;background:rgba(0,0,0,.55);color:#fff;font-size:16rpx;padding:3rpx 9rpx;letter-spacing:1rpx}
+.pattern-name{font-size:28rpx;font-weight:700;color:#263750}
+.pattern-meaning{margin-top:8rpx;font-size:21rpx;line-height:1.7;color:#555d66}
+
+.scene-row{display:grid;grid-template-columns:1fr 1fr;gap:16rpx;margin-top:18rpx}
+.scene-card{position:relative;border-radius:4rpx;overflow:hidden;background:#faf8f3}
+.scene-card image{width:100%;height:280rpx;display:block}
+.scene-cap{padding:12rpx 16rpx;font-size:22rpx;color:#3f464e}
+
+.challenge{background:#233750;color:#fff;padding:34rpx;margin:30rpx -32rpx;border-radius:0}
+.challenge .intro{color:#c9d0d8;font-size:25rpx;line-height:2}

@@ -1,1 +1,90 @@
-<view class="page"><view class="player" bindtap="play"><media type="VIDEO" label="视频素材待补充" height="490rpx" play="{{true}}"/></view><view class="section top"><view class="tag">{{video.category}}</view><view class="page-title title">{{video.title}}</view><view class="page-en">{{video.duration}}</view><view class="intro">{{video.description}}</view></view><view class="section source"><view class="section-title">素材信息</view><view>来源　{{video.source}}</view><view>拍摄时间　{{video.shotDate}}</view><view>拍摄地点　{{video.location}}</view></view><view wx:if="{{video.featured}}" class="section"><view class="section-title">纪录片章节</view><view class="chapter-list"><block wx:for="{{chapters}}" wx:key="*this"><view class="chapter"><view class="chapter-no">0{{index+1}}</view><view><view class="chapter-title">{{item}}</view><view class="intro">【纪录片素材待补充】</view></view><view class="time">--:--</view></view></block></view></view><view class="section"><view class="section-title">相关推荐</view><block wx:for="{{related}}" wx:key="id"><view class="related" bindtap="go" data-id="{{item.id}}"><view><view class="video-title">{{item.title}}</view><view class="video-meta">{{item.category}} · {{item.duration}}</view></view><text>→</text></view></block></view></view>
+<view class="page">
+  <view class="player">
+    <video wx:if="{{video.videoUrl}}" id="vd" class="vd" src="{{video.videoUrl}}" poster="{{video.cover}}" show-center-play-btn="{{true}}" enable-progress-gesture="{{true}}" controls="{{true}}" object-fit="cover"/>
+    <view wx:else class="player-fallback">
+      <image src="{{video.cover}}" mode="aspectFill" />
+      <view class="mask"></view>
+      <view class="play">▶</view>
+    </view>
+  </view>
+
+  <view class="section top">
+    <view class="tag">{{video.category}}</view>
+    <view class="page-title title">{{video.title}}</view>
+    <view class="page-en">{{video.duration}} {{video.subtitle?'· '+video.subtitle:''}}</view>
+    <view class="intro">{{video.description}}</view>
+  </view>
+
+  <view class="section source">
+    <view class="section-title">素材信息</view>
+    <view class="src-row"><text>来源</text><text class="src-val">{{video.source}}</text></view>
+    <view class="src-row"><text>拍摄时间</text><text class="src-val">{{video.shotDate}}</text></view>
+    <view class="src-row"><text>拍摄地点</text><text class="src-val">{{video.location}}</text></view>
+    <view wx:if="{{video.group==='ours'}}" class="src-row"><text>归属</text><text class="src-val ours">OUR OWN RECORD · 本项目团队</text></view>
+  </view>
+
+  <view wx:if="{{video.id===11}}" class="section">
+    <view class="section-title">访谈主题</view>
+    <view class="topic-list">
+      <view class="topic-item">
+        <view class="topic-no">01</view>
+        <view class="topic-body">
+          <view class="topic-title">家族与童年</view>
+          <view class="topic-text">家族第三代银饰技艺传承人，自幼跟随父辈走村串寨学习。</view>
+        </view>
+      </view>
+      <view class="topic-item">
+        <view class="topic-no">02</view>
+        <view class="topic-body">
+          <view class="topic-title">学艺与返乡</view>
+          <view class="topic-text">17 岁独立完成全套银饰制作，毅然返乡深耕银饰工艺。</view>
+        </view>
+      </view>
+      <view class="topic-item">
+        <view class="topic-no">03</view>
+        <view class="topic-body">
+          <view class="topic-title">开坊创业</view>
+          <view class="topic-text">在雨卜苗寨、梦呜苗寨创办马贵兵银饰工艺坊，带动乡亲就业。</view>
+        </view>
+      </view>
+      <view class="topic-item">
+        <view class="topic-no">04</view>
+        <view class="topic-body">
+          <view class="topic-title">带徒传承</view>
+          <view class="topic-text">2012 年起对外开放收徒，培养多名能独立创作的匠人。</view>
+        </view>
+      </view>
+      <view class="topic-item">
+        <view class="topic-no">05</view>
+        <view class="topic-body">
+          <view class="topic-title">进校园 / 社区推广</view>
+          <view class="topic-text">常态化走进中小学、高校与社区开展非遗公益课堂。</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{video.id===11||video.id===10}}" class="section">
+    <view class="section-title">马贵兵主要荣誉</view>
+    <view class="honor-mini">
+      <view>· 2017 年广西壮族自治区级非遗代表性传承人</view>
+      <view>· 2021 年入选文旅部乡村文化和旅游能人支持项目</view>
+      <view>· 广西工艺美术大师 / 广西工匠</view>
+      <view>· 自治区劳动模范 · 五一劳动奖章</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">相关推荐</view>
+    <block wx:for="{{related}}" wx:key="id">
+      <view class="related" bindtap="go" data-id="{{item.id}}">
+        <image src="{{item.cover}}" mode="aspectFill" />
+        <view class="related-copy">
+          <view class="video-title">{{item.title}}</view>
+          <view class="video-meta">{{item.category}} · {{item.duration}}</view>
+        </view>
+        <view class="arrow">→</view>
+      </view>
+    </block>
+  </view>
+</view>

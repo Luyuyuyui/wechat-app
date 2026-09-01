@@ -1,1 +1,42 @@
-<view class="page"><view class="eyebrow">THE WORKSHOP</view><view class="page-title">马贵兵银饰工坊</view><view class="page-en">VISIT INFORMATION</view><view class="section"><media type="WORKSHOP" label="工坊照片待补充" height="480rpx"/></view><view class="section"><view class="section-title">工坊信息</view><view class="info"><text>地址</text><text>【工坊地址待补充】</text></view><view class="info"><text>联系方式</text><text>【联系方式待补充】</text></view></view><view class="empty">真实地址确认后，可在此启用地图与导航功能。</view></view>
+<view class="page">
+  <view class="hero">
+    <image src="{{workshop.photos[0]}}" mode="aspectFill" />
+    <view class="mask"></view>
+    <view class="hero-text">
+      <view class="eyebrow light">THE WORKSHOP · VISIT INFORMATION</view>
+      <view class="hero-name">{{workshop.name}}</view>
+      <view class="hero-sub">广西柳州 · 融水苗族自治县</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">工坊位置</view>
+    <view wx:for="{{workshop.locations}}" wx:key="name" class="loc-card">
+      <view class="loc-name">{{item.name}}</view>
+      <view class="loc-city">{{item.city}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">可提供的服务</view>
+    <block wx:for="{{workshop.services}}" wx:key="*this">
+      <view class="svc-row">{{item}}</view>
+    </block>
+  </view>
+
+  <view class="section">
+    <view class="section-title">工坊影像</view>
+    <view class="photo-grid">
+      <block wx:for="{{workshop.photos}}" wx:key="*this">
+        <view class="photo-card">
+          <image src="{{item}}" mode="aspectFill" />
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="section notice">
+    <view class="section-title light">参观须知</view>
+    <view class="intro light">参观、研学与体验需提前与工坊联系预约。本项目为非商业性文化展示，不提供在线购买或支付功能。</view>
+  </view>
+</view>

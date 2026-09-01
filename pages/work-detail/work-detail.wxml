@@ -1,1 +1,43 @@
-<view class="page"><media type="SILVER ART" label="作品实物图待补充" height="650rpx"/><view class="section"><view class="eyebrow">SILVER ART</view><view class="page-title">{{work.name}}</view><view class="page-en">{{work.pattern}}</view></view><view class="section"><view class="section-title">基本信息</view><view class="intro">{{work.basicInfo}}</view></view><view class="section"><view class="section-title">纹样细节</view><view class="intro">【纹样代表图与文化资料待补充】</view></view><view class="section"><view class="section-title">创作背景</view><view class="intro">{{work.story}}</view></view><view class="section"><view class="section-title">文化寓意与功能用途</view><view class="intro">{{work.meaning}}</view></view><view class="section"><view class="section-title">制作工艺</view><view class="intro">{{work.process}}</view><view class="ghost-btn" bindtap="craft">探索银饰锻造技艺　→</view><view class="ghost-btn" bindtap="video">观看作品细节视频　→</view></view></view>
+<view class="page">
+  <view class="hero">
+    <image src="{{work.cover}}" mode="aspectFill" />
+    <view class="mask"></view>
+    <view class="hero-info">
+      <view class="tag">{{work.type}}</view>
+      <view class="work-title">{{work.name}}</view>
+    </view>
+  </view>
+
+  <view wx:if="{{work.images.length>1}}" class="section thumbs">
+    <scroll-view scroll-x class="thumbs-row">
+      <view class="th-thumb {{active===index?'on':''}}" wx:for="{{work.images}}" wx:key="*this" bindtap="thumb" data-i="{{index}}">
+        <image src="{{item}}" mode="aspectFill" />
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">基本信息</view>
+    <view class="intro">{{work.basicInfo}}</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">创作背景与文化寓意</view>
+    <view class="intro">{{work.meaning}}</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">制作工艺</view>
+    <view class="intro">{{work.process}}</view>
+  </view>
+
+  <view class="section honor-block">
+    <view class="section-title">作品获奖与成果</view>
+    <view class="intro">{{work.achievements}}</view>
+  </view>
+
+  <view class="section actions">
+    <view class="ghost-btn" bindtap="craft">探索银饰锻造技艺　→</view>
+    <view class="ghost-btn" bindtap="video">观看相关影像　→</view>
+  </view>
+</view>

@@ -1,1 +1,21 @@
-<view class="page"><view class="eyebrow">CULTURAL DESIGN</view><view class="page-title">文创展示</view><view class="page-en">DESIGN OUTCOMES</view><view class="intro lead">此处仅展示文化设计成果，不包含购买、价格或支付功能。</view><view class="cards"><block wx:for="{{items}}" wx:key="0"><view class="design"><media type="DESIGN" label="{{item[1]}}" height="370rpx"/><view class="design-title">{{item[0]}}</view><view class="intro">【设计说明待补充】</view></view></block></view></view>
+<view class="page">
+  <view class="eyebrow">CULTURAL DESIGN</view>
+  <view class="page-title">文创展示</view>
+  <view class="page-en">DESIGN OUTCOMES</view>
+  <view class="intro lead">基于项目实践与苗银工艺延伸的文化设计成果，不含购买、价格或支付功能。</view>
+
+  <view class="cards">
+    <block wx:for="{{items}}" wx:key="id">
+      <view class="design">
+        <view class="design-img">
+          <image src="{{item.cover}}" mode="aspectFill" />
+          <view class="design-no">0{{index+1}}</view>
+        </view>
+        <view class="design-body">
+          <view class="design-title">{{item.title}}</view>
+          <view class="design-intro">{{item.desc}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

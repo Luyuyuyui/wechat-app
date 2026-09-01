@@ -1,1 +1,16 @@
-<view class="placeholder media" style="height:{{height}}" bindtap="tap"><view class="placeholder-type">{{type}}</view><view class="placeholder-word">SILVER</view><view class="placeholder-word">{{type}}</view><view wx:if="{{play}}" class="play">▶</view><view class="placeholder-note">{{label}}</view></view>
+<view class="media" style="height:{{height}}" bindtap="tap">
+  <block wx:if="{{image}}">
+    <image class="bg" src="{{image}}" mode="aspectFill" />
+    <view class="scrim"></view>
+    <view wx:if="{{tag}}" class="chip">{{tag}}</view>
+    <view wx:if="{{play}}" class="play">▶</view>
+    <view wx:if="{{label}}" class="caption">{{label}}</view>
+  </block>
+  <block wx:else>
+    <view class="placeholder-type">{{type}}</view>
+    <view class="placeholder-word">SILVER</view>
+    <view class="placeholder-word">{{type}}</view>
+    <view wx:if="{{play}}" class="play">▶</view>
+    <view class="placeholder-note">{{label}}</view>
+  </block>
+</view>

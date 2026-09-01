@@ -1,1 +1,58 @@
-<view class="page"><view class="eyebrow">ABOUT THE PROJECT</view><view class="page-title">青助乡村兴</view><view class="page-en">RONGSHUI INTANGIBLE CULTURAL HERITAGE PRACTICE</view><view class="section about-hero"><view>银光<br/>淬炼</view><text>人 → 技 → 物 → 文 → 传</text></view><view class="section"><view class="section-title">项目介绍</view><view class="intro">本项目服务于“青助乡村兴”专题实践，聚焦广西壮族自治区柳州市融水苗族自治县的苗族银饰非遗文化数字展示。</view></view><view class="section"><view class="section-title">实践团队</view><view class="intro">【实践团队信息待补充】</view></view><view class="section"><view class="section-title">实践地点</view><view class="intro">广西壮族自治区柳州市融水苗族自治县</view></view><view class="section"><view class="section-title">项目成果</view><view class="intro">【项目成果待补充】</view></view></view>
+<view class="page">
+  <view class="about-hero">
+    <image src="/assets/images/hero/cover.jpg" mode="aspectFill" />
+    <view class="mask"></view>
+    <view class="about-hero-text">
+      <view class="hero-name">青助乡村兴</view>
+      <view>银光<br/>淬炼</view>
+    </view>
+    <view class="hero-foot">人 → 技 → 物 → 文 → 传</view>
+  </view>
+
+  <view class="section">
+    <view class="eyebrow">ABOUT THE PROJECT</view>
+    <view class="page-title">项目介绍</view>
+    <view class="intro">服务于"青助乡村兴"专题实践，聚焦广西壮族自治区柳州市融水苗族自治县的苗族银饰非遗文化数字展示。</view>
+    <view class="intro">围绕马贵兵老师的家族传承、带徒授艺、进校园宣讲等实践形成记录，并通过"人、技、物、文、传"五个维度展开呈现。</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">实践地点</view>
+    <view class="info"><text>主体单位</text><text>广西融水苗族自治县</text></view>
+    <view class="info"><text>田野点</text><text>雨卜苗寨 / 梦呜苗寨</text></view>
+    <view class="info"><text>进校园</text><text>融水镇城北小学等</text></view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">项目成果</view>
+    <view class="ach">
+      <view class="ach-item">
+        <view class="ach-num">11</view>
+        <view class="ach-label">影像记录</view>
+        <view class="ach-text">含团队实地拍摄访谈 1 段与马贵兵老师自述 1 段</view>
+      </view>
+      <view class="ach-item">
+        <view class="ach-num">5</view>
+        <view class="ach-label">代表作品</view>
+        <view class="ach-text">含 1 件国家专利作品《银花丝绣球》</view>
+      </view>
+      <view class="ach-item">
+        <view class="ach-num">7</view>
+        <view class="ach-label">工艺工序</view>
+        <view class="ach-text">从熔银到洗银的精选代表性工序</view>
+      </view>
+      <view class="ach-item">
+        <view class="ach-num">2006</view>
+        <view class="ach-label">非遗入列</view>
+        <view class="ach-text">苗族银饰锻制技艺列入国家级非遗名录</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">致谢</view>
+    <view class="intro">本项目在融水苗族自治县文化馆、融水县总工会、梦呜苗寨民俗文化体验园及马贵兵银饰工艺坊的支持下完成。感谢所有受访者、拍摄者与媒体来源方（详见各视频素材信息）。</view>
+  </view>
+
+  <view class="safe-bottom"/>
+</view>
