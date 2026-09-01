@@ -1,4 +1,4 @@
-// 银光淬炼 · 真实资料数据层
+// 錾下生花，苗银新语 · 真实资料数据层
 // 来源：马贵兵个人资料.docx、苗族银饰.docx、文件素材、xlsx 作品-娜迪热.xlsx
 
 // ——— 工艺：从熔银到洗银，近二十道纯手工工序（节选 7 道） ———
@@ -245,7 +245,7 @@ const brochure = {
     { eyebrow: '03 / SEVEN CRAFTS', title: '锻造工艺', text: '熔银、锻打、拉丝、錾刻、编丝、焊接、洗银等近二十道纯手工工序。' },
     { eyebrow: '04 / MASTER WORKS', title: '代表作品', text: '《银花丝绣球》《苗族织锦》《苗族银头饰》《紫荆花》《花山岩画》。' },
     { eyebrow: '05 / INHERITANCE', title: '非遗传承', text: '自 2012 年起对外开放收徒，并常态化开展进校园、进社区非遗推广。' },
-    { eyebrow: '06 / OUR PRACTICE', title: '实践团队', text: '青助乡村兴 · 融水苗族非遗实践团队。' }
+    { eyebrow: '06 / OUR PRACTICE', title: '实践团队', text: '西北工业大学外国语学院暑期社会实践队 · 錾下生花·苗银新语。' }
   ],
   en: [
     { eyebrow: '01 / THE INHERITOR', title: 'Ma Guibing', text: 'Third-generation Miao silversmith from Rongshui, Guangxi, with 30+ years of practice.' },
@@ -253,7 +253,7 @@ const brochure = {
     { eyebrow: '03 / SEVEN CRAFTS', title: 'Seven Crafts', text: 'Smelting, forging, wire-drawing, chasing, filigree, soldering, and polishing — nearly 20 manual steps.' },
     { eyebrow: '04 / MASTER WORKS', title: 'Master Works', text: 'Silver-Filigree Emball · Miao Brocade · Miao Headdress · Bauhinia · Huashan Rock Paintings.' },
     { eyebrow: '05 / INHERITANCE', title: 'Inheritance', text: 'Open apprenticeship since 2012, plus regular in-school and community outreach.' },
-    { eyebrow: '06 / OUR PRACTICE', title: 'Our Practice', text: 'Qingzhu Rural Vitality · Rongshui Miao ICH Practice Team.' }
+    { eyebrow: '06 / OUR PRACTICE', title: 'Our Practice', text: 'NWPU School of Foreign Languages · Zhan Xia Sheng Hua Project.' }
   ]
 }
 

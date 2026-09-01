@@ -1,6 +1,6 @@
 Component({
   properties: {
-    label: { type: String, value: '素材待补充' },
+    label: { type: String, value: '' },
     type: { type: String, value: 'SILVER ARCHIVE' },
     height: { type: String, value: '360rpx' },
     play: { type: Boolean, value: false },

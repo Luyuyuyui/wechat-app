@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./",
   "projectname": "silver-forging",
-  "description": "银光淬炼·苗族银饰数字展厅",
+  "description": "錾下生花，苗银新语·苗族银饰非遗数字展示小程序",
   "appid": "touristappid",
   "compileType": "miniprogram",
   "libVersion": "3.8.8",

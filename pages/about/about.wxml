@@ -3,8 +3,8 @@
     <image src="/assets/images/hero/cover.jpg" mode="aspectFill" />
     <view class="mask"></view>
     <view class="about-hero-text">
-      <view class="hero-name">青助乡村兴</view>
-      <view>银光<br/>淬炼</view>
+      <view class="hero-name">錾下生花，苗银新语</view>
+      <view>西北工业大学<br/>外国语学院实践队</view>
     </view>
     <view class="hero-foot">人 → 技 → 物 → 文 → 传</view>
   </view>
@@ -12,13 +12,13 @@
   <view class="section">
     <view class="eyebrow">ABOUT THE PROJECT</view>
     <view class="page-title">项目介绍</view>
-    <view class="intro">服务于"青助乡村兴"专题实践，聚焦广西壮族自治区柳州市融水苗族自治县的苗族银饰非遗文化数字展示。</view>
-    <view class="intro">围绕马贵兵老师的家族传承、带徒授艺、进校园宣讲等实践形成记录，并通过"人、技、物、文、传"五个维度展开呈现。</view>
+    <view class="intro">西北工业大学外国语学院暑期社会实践队「錾下生花·苗银新语」项目，于 2026 年 8 月以线上访谈形式，走近广西融水苗族银饰锻制技艺代表性传承人马贵兵。</view>
+    <view class="intro">团队秉持"守正创新"理念，记录苗银技艺从"家传"走向"广传"的当代故事，以数字展陈助力非遗的青春表达与广泛传播。</view>
   </view>
 
   <view class="section">
     <view class="section-title">实践地点</view>
-    <view class="info"><text>主体单位</text><text>广西融水苗族自治县</text></view>
+    <view class="info"><text>主体单位</text><text>西北工业大学外国语学院暑期社会实践队</text></view>
     <view class="info"><text>田野点</text><text>雨卜苗寨 / 梦呜苗寨</text></view>
     <view class="info"><text>进校园</text><text>融水镇城北小学等</text></view>
   </view>

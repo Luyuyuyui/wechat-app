@@ -1,1 +1,1 @@
-App({ globalData: { brand: '银光淬炼' } })
+App({ globalData: { brand: '錾下生花，苗银新语' } })

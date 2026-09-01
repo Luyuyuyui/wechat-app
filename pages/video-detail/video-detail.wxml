@@ -15,14 +15,6 @@
     <view class="intro">{{video.description}}</view>
   </view>
 
-  <view class="section source">
-    <view class="section-title">素材信息</view>
-    <view class="src-row"><text>来源</text><text class="src-val">{{video.source}}</text></view>
-    <view class="src-row"><text>拍摄时间</text><text class="src-val">{{video.shotDate}}</text></view>
-    <view class="src-row"><text>拍摄地点</text><text class="src-val">{{video.location}}</text></view>
-    <view wx:if="{{video.group==='ours'}}" class="src-row"><text>归属</text><text class="src-val ours">OUR OWN RECORD · 本项目团队</text></view>
-  </view>
-
   <view wx:if="{{video.id===11}}" class="section">
     <view class="section-title">访谈主题</view>
     <view class="topic-list">
@@ -86,5 +78,13 @@
         <view class="arrow">→</view>
       </view>
     </block>
+  </view>
+
+  <view class="section source">
+    <view class="section-title">素材信息</view>
+    <view class="src-row"><text>来源</text><text class="src-val">{{video.source}}</text></view>
+    <view class="src-row"><text>拍摄时间</text><text class="src-val">{{video.shotDate}}</text></view>
+    <view class="src-row"><text>拍摄地点</text><text class="src-val">{{video.location}}</text></view>
+    <view wx:if="{{video.group==='ours'}}" class="src-row"><text>归属</text><text class="src-val ours">OUR OWN RECORD · 本项目团队</text></view>
   </view>
 </view>

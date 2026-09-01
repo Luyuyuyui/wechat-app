@@ -1,28 +1,41 @@
 <view class="home">
   <!-- HERO -->
   <view class="hero">
-    <image class="hero-bg" src="/assets/images/hero/cover.jpg" mode="aspectFill" />
+    <image class="hero-bg" src="/assets/images/works/work-03-cover.jpg" mode="aspectFill" />
     <view class="hero-mask"></view>
     <view class="hero-top">
-      <view class="brand">银光淬炼</view>
-      <view class="brand-en">SILVER FORGING</view>
+      <view class="brand">錾下生花，苗银新语</view>
+      <view class="brand-en">ZHAN XIA SHENG HUA · MIAO YIN XIN YU</view>
     </view>
     <view class="hero-copy">
       <view class="eyebrow light">苗族银饰锻造技艺</view>
       <view class="hero-name">马贵兵</view>
       <view class="hero-sub">{{person.identity}}</view>
-      <view class="hero-title">银光淬炼</view>
+      <view class="hero-title">錾下生花，苗银新语</view>
       <view class="hero-desc">一锤一錾，见证一门技艺的传承</view>
-      <view class="explore" bindtap="go" data-url="/pages/person/person">探索非遗技艺　→</view>
+      <view class="explore" hover-class="lift" bindtap="go" data-url="/pages/person/person">探索非遗技艺　→</view>
     </view>
-    <view class="hero-eyebrow">项目主视觉 · 苗族银头饰（局部）</view>
   </view>
 
   <view class="page">
+
+    <!-- 传承人 -->
+    <view class="section">
+      <section title="传承人" en="THE INHERITOR" more="了解更多" bind:more="go" data-url="/pages/person/person"/>
+      <view class="person-card" hover-class="lift" bindtap="go" data-url="/pages/person/person">
+        <media height="390rpx" image="/assets/images/person/teaching-1.jpg" tag="INHERITOR" label="马贵兵老师带学生体验拉丝"/>
+        <view class="person-copy">
+          <view class="person-name">马贵兵</view>
+          <view class="identity">{{person.identity}}</view>
+          <view class="intro">{{person.bio}}</view>
+        </view>
+      </view>
+    </view>
+
     <!-- 我们的记录 -->
     <view class="section">
       <section title="我们的记录" en="OUR OWN RECORD" more="查看全部" bind:more="go" data-url="/pages/video/video"/>
-      <view class="interview-feature" bindtap="go" data-url="/pages/video/video?focus=ours">
+      <view class="interview-feature" hover-class="lift" bindtap="go" data-url="/pages/video/video?focus=ours">
         <image class="interview-img" src="/assets/images/video/poster-11.jpg" mode="aspectFill" />
         <view class="play">▶</view>
         <view class="badge">OUR RECORD</view>
@@ -33,13 +46,13 @@
         </view>
       </view>
       <view class="record-row">
-        <view class="record-mini" bindtap="go" data-url="/pages/video-detail/video-detail?id=10">
+        <view class="record-mini" hover-class="lift" bindtap="go" data-url="/pages/video-detail/video-detail?id=10">
           <image src="/assets/images/video/poster-10.jpg" mode="aspectFill" />
           <view class="play small">▶</view>
           <view class="record-mini-title">马贵兵老师个人自述</view>
           <view class="record-mini-meta">人物 · 03:14</view>
         </view>
-        <view class="record-mini" bindtap="go" data-url="/pages/article/article">
+        <view class="record-mini" hover-class="lift" bindtap="go" data-url="/pages/article/article">
           <image src="/assets/images/person/teaching-1.jpg" mode="aspectFill" />
           <view class="record-mini-title">进校园宣讲影像</view>
           <view class="record-mini-meta">融水镇城北小学 · 2025-11</view>
@@ -47,18 +60,6 @@
       </view>
     </view>
 
-    <!-- 传承人 -->
-    <view class="section">
-      <section title="传承人" en="THE INHERITOR" more="了解更多" bind:more="go" data-url="/pages/person/person"/>
-      <view class="person-card" bindtap="go" data-url="/pages/person/person">
-        <media height="390rpx" image="/assets/images/person/teaching-1.jpg" tag="INHERITOR" label="马贵兵老师带学生体验拉丝"/>
-        <view class="person-copy">
-          <view class="person-name">马贵兵</view>
-          <view class="identity">{{person.identity}}</view>
-          <view class="intro">{{person.bio}}</view>
-        </view>
-      </view>
-    </view>
 
     <!-- 工艺 -->
     <view class="section">
@@ -79,7 +80,7 @@
       <section title="银饰之美" en="SILVER ART" more="浏览作品" bind:more="go" data-url="/pages/works/works"/>
       <view class="work-grid">
         <block wx:for="{{works}}" wx:key="id">
-          <view class="work" bindtap="go" data-url="/pages/work-detail/work-detail?id={{item.id}}">
+          <view class="work" hover-class="lift" bindtap="go" data-url="/pages/work-detail/work-detail?id={{item.id}}">
             <media height="260rpx" image="{{item.cover}}" tag="{{item.type}}"/>
             <view>{{item.name}}</view>
           </view>
@@ -89,11 +90,11 @@
 
     <!-- 影像资料 -->
     <view class="section">
-      <section title="银光淬炼 · 影像资料" en="MOVING IMAGE" more="全部影像" bind:more="go" data-url="/pages/video/video"/>
+      <section title="錾下生花，苗银新语 · 影像资料" en="MOVING IMAGE" more="全部影像" bind:more="go" data-url="/pages/video/video"/>
       <scroll-view scroll-x class="video-scroll">
         <view class="video-row">
           <block wx:for="{{videos}}" wx:key="id">
-            <view class="mini-video" bindtap="go" data-url="/pages/video-detail/video-detail?id={{item.id}}">
+            <view class="mini-video" hover-class="lift" bindtap="go" data-url="/pages/video-detail/video-detail?id={{item.id}}">
               <media height="270rpx" image="{{item.cover}}" play="{{true}}" tag="{{item.category}}"/>
               <view class="mini-copy">
                 <view class="video-title">{{item.title}}</view>
@@ -107,7 +108,7 @@
 
     <!-- 文化 banner -->
     <view class="section">
-      <view class="culture-banner" bindtap="go" data-url="/pages/culture/culture">
+      <view class="culture-banner" hover-class="lift" bindtap="go" data-url="/pages/culture/culture">
         <view class="eyebrow">CULTURE IN SILVER</view>
         <view class="culture-title">银饰里的苗族文化</view>
         <view class="intro">苗族银饰锻制技艺于 2006 年列入第一批国家级非物质文化遗产名录（编号Ⅷ-40）。</view>
@@ -116,10 +117,10 @@
     </view>
 
     <!-- 宣传册 -->
-    <view class="section booklet" bindtap="go" data-url="/pages/brochure/brochure">
+    <view class="section booklet" hover-class="lift" bindtap="go" data-url="/pages/brochure/brochure">
       <view>
         <view class="eyebrow">BILINGUAL BOOKLET</view>
-        <view class="book-title">《银光淬炼》</view>
+        <view class="book-title">《錾下生花，苗银新语》</view>
         <view class="intro">中英双语非遗文化宣传册 · 六章</view>
         <view class="ghost-btn">开始阅读　→</view>
       </view>
@@ -127,7 +128,7 @@
     </view>
 
     <!-- 记录 -->
-    <view class="section record" bindtap="go" data-url="/pages/article/article">
+    <view class="section record" hover-class="lift" bindtap="go" data-url="/pages/article/article">
       <view class="eyebrow">OUR RECORD</view>
       <view class="section-title">我们的记录　→</view>
       <view class="intro">实践动态 · 采访文章 · 文化观察 · 项目成果</view>
