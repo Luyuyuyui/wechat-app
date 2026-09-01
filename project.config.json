@@ -12,10 +12,6 @@
         "value": "materials"
       },
       {
-        "type": "folder",
-        "value": "assets/videos"
-      },
-      {
         "type": "file",
         "value": "README.md"
       }
