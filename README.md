@@ -104,11 +104,18 @@ netstat -ano | grep 7890
 
 ## 视频播放与部署
 
-`assets/videos/` 中的视频体积较大，不进代码包，只在模拟器本地预览时可用。真机上视频会显示封面，需要部署到 CDN：
+视频有「模拟器本地预览」和「真机/上传」两种模式，二选一：
 
-1. 把 `assets/videos/*.mp4` 上传到对象存储（腾讯云 COS / 阿里云 OSS 等）；
-2. 把 `data/mock.js` 中对应的 `videoUrl` 换成 HTTPS 地址；
-3. 在 `app.json` 的 `downloadFile` 合法域名或小程序后台「开发管理 → 服务器域名」中加入该域名。
+**模式 A · 模拟器本地预览（不用托管）**
+- 确保 `project.config.json` 的 `packOptions.ignore` **不含** `assets/videos`（视频编入本地包）；
+- 开发者工具模拟器即可直接播放 `/assets/videos/*.mp4`。
+- 代价：包体约 195MB，超过 2MB 上限，**不能用于真机调试/预览/上传**。
+
+**模式 B · 真机 / 预览 / 上传（需远程托管）**
+- `project.config.json` 的 `packOptions.ignore` **保留** `assets/videos`（包体保持 <2MB）；
+- 把 `assets/videos/*.mp4` 上传到对象存储（腾讯云 COS / 阿里云 OSS / GitHub Release 等）；
+- 在 `data/mock.js` 顶部把 `videoBase` 设为你的地址，例如 `'https://your-cdn.com/videos/'`，脚本会自动把本地路径替换为远程地址；
+- 在小程序后台「开发管理 → 服务器域名」中加入该视频域名。
 
 克隆仓库后如需在本地重建 `assets/`（图片压缩、视频副本、视频海报、访谈转码），运行：
 

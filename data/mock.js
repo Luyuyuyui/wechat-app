@@ -1,6 +1,11 @@
 // 錾下生花，苗银新语 · 真实资料数据层
 // 来源：马贵兵个人资料.docx、苗族银饰.docx、文件素材、xlsx 作品-娜迪热.xlsx
 
+// 视频远程地址前缀：留空 = 使用本地 /assets/videos/（仅开发者工具模拟器预览可用，
+// 该目录被 packOptions.ignore 排除、不进代码包）。真机调试/预览/上传 必须把视频托管到
+// CDN 或对象存储后在此填写，例如 'https://your-cdn.com/videos/'，脚本会自动替换路径。
+const videoBase = ''
+
 // ——— 工艺：从熔银到洗银，近二十道纯手工工序（节选 7 道） ———
 const crafts = [
   { id: 1, number: '01', title: '熔银', cover: '/assets/images/works/work-03-cover.jpg',
@@ -287,6 +292,11 @@ const workshop = {
     '/assets/images/person/teaching-1.jpg',
     '/assets/images/person/teaching-2.jpg'
   ]
+}
+
+// 远程视频：配置了 videoBase 时，把本地 /assets/videos/ 路径替换为远程地址（用于真机/上传）
+if (videoBase) {
+  videos.forEach(v => { if (v.videoUrl) v.videoUrl = v.videoUrl.replace('/assets/videos/', videoBase) })
 }
 
 module.exports = {
