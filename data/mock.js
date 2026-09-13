@@ -115,35 +115,35 @@ const videos = [
 // ——— 作品：5 件（来源：xlsx 作品-娜迪热.xlsx） ———
 const works = [
   { id: 1, name: '银花丝绣球', type: '工艺品', cover: '/assets/images/works/work-01-cover.jpg',
-    images: ['/assets/images/works/work-01-1.jpg','/assets/images/works/work-01-2.jpg','/assets/images/works/work-01-3.jpg'],
+    images: ['/assets/images/works/work-01-1.jpg','/assets/images/works/work-01-2.jpg','/assets/images/works/work-01-3.jpg','/assets/images/works/new-13.jpg','/assets/images/works/new-02.jpg'],
     basicInfo: '取材广西壮族传统布艺绣球，以银丝替代传统绣球的刺绣丝线，将民族绣球文化与苗族银花丝锻造技艺结合，是非遗创新代表作品。',
     process: '先将银料反复拉制成纤细银丝，两根拧成一股；采用掐、填、攒、焊等银花丝技艺，先制作外框，把银丝按纹样扭曲填入框内制成银绣片，再将多片银绣片焊接、调整曲度，组装成浑圆立体的绣球造型。',
     achievements: '作品外观与制作工艺，于 2019 年获得国家专利证书。',
     meaning: '打破传统绣球布料材质的局限，是传统民族器物与苗族银饰手工技艺融合创新的代表作品，常作为研学展示、非遗文创展品。',
     videoId: 9 },
   { id: 2, name: '苗族织锦', type: '银饰', cover: '/assets/images/works/work-02-cover.jpg',
-    images: ['/assets/images/works/work-02-cover.jpg'],
+    images: ['/assets/images/works/work-02-cover.jpg','/assets/images/works/new-14.jpg','/assets/images/works/new-18.jpg'],
     basicInfo: '银艺创新作品——并非传统布料织锦，而是以银花丝、银锻打工艺模拟苗族织锦的纹样肌理，把苗族织锦的传统纹样转化为银饰工艺表达，属银饰对织锦文化的艺术转译。',
     process: '运用苗族银饰锻造技艺，经铸炼、拉丝、掐丝、攒焊等工序，复刻苗族织锦的几何、图腾纹样，将织锦的经纬纹理以银丝编织、拼接的形式呈现，把织物的视觉效果在银质载体上实现。',
     achievements: '荣获第 48 届全国"金凤凰"创新产品设计大赛银奖。"金凤凰"大赛是国内工艺美术行业重要国家级赛事。',
     meaning: '打破银饰创作的传统题材局限，将苗族织锦纹样文化融入银饰创作，实现苗族两大非遗技艺的跨界融合，推动民族传统纹样的现代表达。',
     videoId: 8 },
   { id: 3, name: '苗族银头饰', type: '银饰', cover: '/assets/images/works/work-03-cover.jpg',
-    images: ['/assets/images/works/work-03-cover.jpg'],
+    images: ['/assets/images/works/work-03-cover.jpg','/assets/images/works/new-03.jpg','/assets/images/works/new-09.jpg','/assets/images/works/new-10.jpg','/assets/images/works/new-12.jpg','/assets/images/works/new-08.jpg'],
     basicInfo: '以苗族传统盛装银冠头饰为原型的手工银饰作品，保留苗族传统头饰形制，融合现代手工创新设计，是苗族银饰锻造技艺的代表性参赛作品。',
     process: '采用苗族银饰全套手工工序，包含铸炼、锤打、拉丝、掐丝、錾刻、攒焊等；饰件雕刻花鸟、瑞兽等苗族传统吉祥纹样，搭配银花、银流苏吊饰，层次繁复，还原苗族节庆盛装头饰的华丽风貌，全程手工锻打，不使用模压工艺。',
     achievements: '荣获第 48 届全国"金凤凰"创新产品设计大赛铜奖、第二届广西发明创造成果展传统手工业创新成果奖。',
     meaning: '立足融水苗族传统头饰文化，在复原传统形制的基础上做工艺优化，既保留民族服饰文化内涵，又体现当代非遗传承人的手工创新，常用于非遗展览、工艺美术赛事参展。',
     videoId: 2 },
   { id: 4, name: '紫荆花', type: '工艺画', cover: '/assets/images/works/work-04-cover.jpg',
-    images: ['/assets/images/works/work-04-cover.jpg'],
+    images: ['/assets/images/works/work-04-cover.jpg','/assets/images/works/new-01.jpg','/assets/images/works/new-05.jpg','/assets/images/works/new-15.jpg'],
     basicInfo: '景泰蓝掐丝工艺画，是跨界创新工艺挂画，并非传统银饰首饰，是马贵兵研修归来将景泰蓝掐丝工艺与银丝技艺相结合的创新尝试。',
     process: '以银丝做掐丝基底，沿用掐丝工艺，搭配景泰蓝点彩着色，塑造紫荆花花朵形态；作品色彩艳丽，造型灵动鲜活，实现苗族银丝技艺与景泰蓝工艺的跨技艺融合。',
     achievements: '主要用于工坊展示，未参与工艺美术赛事评奖，未申请专利。',
     meaning: '突破苗族银饰传统首饰、摆件的题材边界，拓展银艺的装饰画品类，体现非遗传承人对外来工艺的吸收转化，丰富民族工艺的表现形式。',
     videoId: 1 },
   { id: 5, name: '花山岩画', type: '工艺画', cover: '/assets/images/works/work-05-cover.jpg',
-    images: ['/assets/images/works/work-05-cover.jpg','/assets/images/works/work-05-1.jpg'],
+    images: ['/assets/images/works/work-05-cover.jpg','/assets/images/works/work-05-1.jpg','/assets/images/works/new-04.jpg','/assets/images/works/new-06.jpg','/assets/images/works/new-07.jpg','/assets/images/works/new-11.jpg','/assets/images/works/new-16.jpg','/assets/images/works/new-17.jpg'],
     basicInfo: '以 2016 年花山岩画申遗成功为契机，马贵兵立足广西本土骆越文化，将千年岩画图腾与苗族银饰技艺结合，以银为媒传承地域非遗文化、创新银艺题材。',
     process: '运用苗族银饰锻造技艺，通过锤揲、拉丝、錾刻、焊接等工序，将花山岩画典型的蛙人、图腾人物等骆越先民岩画符号复刻在银质板材之上，把崖壁上的古老岩画图像转化为银质艺术品，实现世界文化遗产与苗族银饰非遗技艺的融合表达。',
     achievements: '公开报道中无该作品对应的专利记录，也无参赛获奖记录，主要作为工坊展示作品。',
@@ -219,7 +219,13 @@ const person = {
   },
   teaching: [
     { image: '/assets/images/person/teaching-1.jpg', caption: '融水镇城北小学宣讲会 · 现场体验拉丝' },
-    { image: '/assets/images/person/teaching-2.jpg', caption: '融水镇城北小学宣讲会 · 苗银文化讲解' }
+    { image: '/assets/images/person/teaching-2.jpg', caption: '融水镇城北小学宣讲会 · 苗银文化讲解' },
+    { image: '/assets/images/person/ma-01.jpg', caption: '马贵兵老师在工坊专注制作银饰' },
+    { image: '/assets/images/person/ma-02.jpg', caption: '马贵兵老师在非遗课堂讲解苗银文化' },
+    { image: '/assets/images/person/ma-03.jpg', caption: '马贵兵老师展示银饰作品细节' },
+    { image: '/assets/images/person/ma-04.jpg', caption: '马贵兵老师指导团队成员体验银饰锻造' },
+    { image: '/assets/images/person/ma-05.jpg', caption: '马贵兵老师在非遗展演活动现场' },
+    { image: '/assets/images/person/ma-06.jpg', caption: '马贵兵老师在工坊夜间赶制作品' }
   ]
 }
 
@@ -242,24 +248,131 @@ const culture = {
   ]
 }
 
-// ——— 宣传册（双语） ———
+// ——— 宣传册（双语 · 内容来源：materials/ 下两份 PDF：中文 4 页 + 英文 1 页） ———
 const brochure = {
-  zh: [
-    { eyebrow: '01 / THE INHERITOR', title: '马贵兵故事', text: '广西融水苗族银饰第三代传承人，从艺三十余年。' },
-    { eyebrow: '02 / SILVER CULTURE', title: '苗族银饰文化', text: '2006 年列入第一批国家级非物质文化遗产名录（编号Ⅷ-40）。' },
-    { eyebrow: '03 / SEVEN CRAFTS', title: '锻造工艺', text: '熔银、锻打、拉丝、錾刻、编丝、焊接、洗银等近二十道纯手工工序。' },
-    { eyebrow: '04 / MASTER WORKS', title: '代表作品', text: '《银花丝绣球》《苗族织锦》《苗族银头饰》《紫荆花》《花山岩画》。' },
-    { eyebrow: '05 / INHERITANCE', title: '非遗传承', text: '自 2012 年起对外开放收徒，并常态化开展进校园、进社区非遗推广。' },
-    { eyebrow: '06 / OUR PRACTICE', title: '实践团队', text: '西北工业大学外国语学院暑期社会实践队 · 錾下生花·苗银新语。' }
+  cover: {
+    bylineZh: '马贵兵',
+    bylineEn: 'Ma Guibing',
+    titleZh: '錾下生花\n苗银新语',
+    titleEn: 'ZHAN XIA SHENG HUA',
+    subZh: '双语非遗文化宣传册',
+    subEn: 'Bilingual ICH Booklet',
+    tagZh: '匠心守艺 · 苗银新语',
+    tagEn: "Witness the Artisan's Heart,\nPass on the Miao Heritage",
+    contact: '电话 13481987528　·　广西柳州市融水苗族自治县融水镇风情苗乡景区非遗街区15栋1-4号门面'
+  },
+  sections: [
+    {
+      id: 1,
+      eyebrow: "01 / THE ARTISAN'S PATH",
+      titleZh: '匠心之路',
+      titleEn: "The Artisan's Path",
+      body: [
+        { kind: 'p', textZh: '广西融水苗族自治县香粉乡中坪村人，苗族，苗族银饰锻造技艺家族第三代传承人。自幼跟随父辈学习银饰手艺，深耕此项技艺三十余年，坚守纯手工锻造初心，在传承传统苗银工艺的同时不断创新文创设计。',
+          textEn: "Born in Zhongping Village, Xiangfen Township, Rongshui Miao Autonomous County, Guangxi, of Miao ethnicity, he is the third-generation inheritor of his family's silver forging craft. Learning from his elders since childhood, he has devoted over thirty years to the art, staying true to hand-forging while continuously innovating in cultural product design." },
+        { kind: 'h', textZh: '年少学艺 · 千锤筑基', textEn: 'Youthful Apprenticeship' },
+        { kind: 'p', textZh: '自幼跟随父辈学艺，深耕苗族传统银饰锻造，日夜打磨捶打、拉丝、镌刻等核心技法，历经千锤百炼夯实功底。青年外出务工仍心系苗艺，最终坚定返乡守艺初心。',
+          textEn: 'From childhood, he followed his elders in mastering the core skills of Miao silver forging — hammering, wire-drawing, engraving — day and night, tempered by relentless practice. Though he left for work in his youth, his heart stayed with the craft, and he ultimately returned home with a steadfast resolve to preserve it.' },
+        { kind: 'h', textZh: '返乡创业 · 兴乡富民', textEn: 'Returning Home to Start Businesses' },
+        { kind: 'p', textZh: '扎根苗乡本土创业，先后建成雨卜、梦呜苗寨银饰工艺坊与非遗研学传习基地。打造集创作、展示、体验、研学、销售为一体的非遗阵地，以"培训+就业"模式带动乡邻增收，助力乡村振兴。',
+          textEn: 'Rooted in his hometown, he established silver craft workshops and ICH study bases in Yubu and Mengming Miao Villages. Creating an integrated hub for creation, exhibition, experience, study, and sales, he adopts a "training + employment" model to boost local incomes and advance rural revitalization.' },
+        { kind: 'h', textZh: '打破壁垒 · 无私传艺', textEn: 'Breaking Barriers' },
+        { kind: 'p', textZh: '打破家族秘传旧俗，2012 年起公开对外收徒，优先帮扶困难青年。手把手倾囊相授三十余年工艺经验，常态化开设公益培训班，培育新生代银饰匠人，补齐非遗传承断层。',
+          textEn: "Breaking the family's secret tradition, he began openly taking apprentices in 2012, giving priority to underprivileged youth. He has imparted over thirty years of experience hands-on, regularly holding free training classes to nurture a new generation of silversmiths and bridge the gap in ICH inheritance." },
+        { kind: 'h', textZh: '活化非遗 · 全域推广', textEn: 'Revitalizing ICH' },
+        { kind: 'p', textZh: '持续进校园、进社区开展非遗公益课堂与研学实践，现场演示锻造工艺、讲解苗银民俗文化。积极参与各级文旅展演、遗产日活动，让深山苗银技艺走进大众、走向市场。',
+          textEn: 'He continuously brings ICH public classes and study programs into schools and communities, demonstrating forging techniques and explaining Miao silver folklore. Actively participating in cultural tourism performances and Heritage Day events, he brings the deep-mountain Miao silver craft to the public and the market.' },
+        { kind: 'h', textZh: '匠心出圈 · 官方认可', textEn: 'Craftsmanship Recognized' },
+        { kind: 'p', textZh: '深耕传承、助农、科普多年，先进事迹被文化和旅游部平台、人民政协网、广西新闻网等各级官方媒体专题报道，大幅提升融水苗族银饰非遗知名度。',
+          textEn: "Years of dedication to inheritance, rural support, and science popularization have drawn feature reports from the Ministry of Culture and Tourism, the People's Political Consultative Conference News, Guangxi News Network, and other official media, greatly raising the profile of Rongshui Miao silver ICH." }
+      ]
+    },
+    {
+      id: 2,
+      eyebrow: '02 / SILVER SHINES THE WORLD',
+      titleZh: '银辉映世',
+      titleEn: 'Silver Shines the World',
+      body: [
+        { kind: 'p', textZh: '苗族银饰是融水苗族珍贵的文化载体。源远流长的锻造技艺承载着苗族族群记忆，蝴蝶、花鸟等纹样蕴含祈福纳祥的美好寓意，一锤一錾皆是苗乡文脉的鲜活见证。',
+          textEn: 'Miao silver ornaments are a precious cultural vessel of the Rongshui Miao. The long-standing forging craft carries the collective memory of the Miao people — butterfly and floral motifs embody blessings for good fortune. Every hammer-strike and chisel mark bears living witness to the heritage of the Miao heartland.' },
+        { kind: 'h', textZh: '节庆盛装', textEn: 'Festival Attire' },
+        { kind: 'p', textZh: '苗年、坡会盛会，银饰叮咚，尽显民族风采。',
+          textEn: 'Miao New Year and slope-festival gatherings — silver pieces chime to reveal ethnic splendor.' },
+        { kind: 'h', textZh: '婚嫁佩戴', textEn: 'Wedding Adornment' },
+        { kind: 'p', textZh: '银冠、银项圈作为婚嫁重礼，寄托美满祝愿。',
+          textEn: 'Silver crowns and necklaces serve as ceremonial gifts for weddings, expressing wishes for a happy union.' },
+        { kind: 'h', textZh: '日常便装', textEn: 'Everyday Wear' },
+        { kind: 'p', textZh: '简约银镯、花丝银饰装点平凡生活。',
+          textEn: 'Simple silver bracelets and filigree pieces adorn daily life.' },
+        { kind: 'h', textZh: '祭祀仪式', textEn: 'Ritual Offerings' },
+        { kind: 'p', textZh: '银器承载敬祖祈福，延续古老民俗。',
+          textEn: 'Silver vessels carry ancestral reverence and continue ancient folk customs.' },
+        { kind: 'h', textZh: '传承人保护体系', textEn: 'Inheritance System' },
+        { kind: 'p', textZh: '苗族银饰锻造技艺已建成县‑市‑自治区三级传承人保护体系。马贵兵打破家族秘传传统，广收学徒、开设公益培训班，打造非遗体验馆与研学工坊，推动技艺开放共享。',
+          textEn: "A three-tier inheritor system (county–city–autonomous region) has been established for Miao silver forging. Ma Guibing broke the family's secrecy tradition, openly recruiting apprentices and running free training classes, while building ICH experience centers and study workshops." },
+        { kind: 'h', textZh: '国潮与新机遇', textEn: 'A New Wave' },
+        { kind: 'p', textZh: '随着"国潮"消费兴起，苗族银饰迎来了新的发展机遇。本项目通过系统整理苗族银饰的历史渊源与文化内涵，填补了相关数字化资料的不足，为学术研究和公众传播提供了基础素材；同时，项目内容可通过新媒体平台进行科普传播，帮助更多年轻人了解苗银文化，提升非遗关注度，为传承人引流潜在受众。',
+          textEn: 'The rise of "guochao" (national pride) consumption has brought new opportunities for Miao silver. This project systematically organizes Miao silver\'s history and cultural substance, filling a gap in digital resources — supporting academic research and public outreach, while drawing potential new audiences to the inheritor.' }
+      ]
+    },
+    {
+      id: 3,
+      eyebrow: '03 / SILVER FORGES MIAO CHARM',
+      titleZh: '银铸苗韵',
+      titleEn: 'Silver Forges Miao Charm',
+      body: [
+        { kind: 'h', textZh: '银头冠', textEn: 'Silver Headdress' },
+        { kind: 'p', textZh: '以纯银打造，高 40–50 厘米，是苗族身份与财富的象征，纹样寄托吉祥美满的美好期许，多用于婚嫁、节庆盛装佩戴。',
+          textEn: "Forged in pure silver, 40–50 cm tall, it symbolizes the wearer's identity and prosperity; its patterns carry wishes for auspiciousness, traditionally worn at weddings and festival attire." },
+        { kind: 'h', textZh: '银花丝绣球', textEn: 'Silver Filigree Embroidered Ball' },
+        { kind: 'p', textZh: '采用纯银花丝、刺绣彩料及金属挂链，球径 12–15 厘米，融合壮、苗两族非遗技艺，象征团圆友谊，主要用作展览陈设摆件。',
+          textEn: 'Pure silver filigree with embroidered colors and metal chains, 12–15 cm in diameter. Blending Zhuang and Miao non-heritage crafts, it symbolizes reunion and friendship — used as exhibition décor.' },
+        { kind: 'h', textZh: '苗族花丝银簪', textEn: 'Miao Filigree Hairpin' },
+        { kind: 'p', textZh: '纯银花丝工艺并点缀点蓝，簪长 20–22 厘米，花朵纹样寓意吉祥，常搭配银头冠，供婚嫁及民族演出盘发使用。',
+          textEn: 'Pure silver filigree with touches of enamel blue, 20–22 cm long. Floral motifs convey good fortune, often paired with the silver headdress for weddings and ethnic performances.' },
+        { kind: 'h', textZh: '工艺细节', textEn: 'Craft Details' },
+        { kind: 'p', textZh: '备料锻打　·　塑形錾刻　·　焊接组装　·　抛光整理',
+          textEn: 'Material & Forging — Shaping & Chasing — Welding & Assembly — Polishing & Finishing.' },
+        { kind: 'p', textZh: '錾刻纹路：手工錾锤敲凿，在银器表面雕琢，凹凸民族纹样。',
+          textEn: 'Chasing: hand-held chisels and hammers strike the silver surface, sculpting raised and sunken ethnic patterns.' },
+        { kind: 'p', textZh: '编丝工艺：细银丝拧转编织，形成繁复通透的花丝肌理。',
+          textEn: 'Filigree weaving: fine silver wires are twisted and braided to form intricate, translucent filigree textures.' },
+        { kind: 'p', textZh: '焊接节点：高温焊药拼接银饰零件，完成构件组合。',
+          textEn: 'Soldered joints: high-temperature solder unites silver components into finished pieces.' }
+      ]
+    },
+    {
+      id: 4,
+      eyebrow: '04 / GLORY IMPRINT',
+      titleZh: '荣光印记',
+      titleEn: 'Glory Imprint',
+      body: [
+        { kind: 'h', textZh: '非遗传承人层级', textEn: 'ICH Inheritance Levels' },
+        { kind: 'p', textZh: '2013 年　融水县县级非遗传承人',
+          textEn: '2013 – County-level Inheritor, Rongshui County' },
+        { kind: 'p', textZh: '2016 年　柳州市市级非遗传承人',
+          textEn: '2016 – Municipal-level Inheritor, Liuzhou City' },
+        { kind: 'p', textZh: '2017 年　广西区级非遗传承人',
+          textEn: '2017 – Regional-level Inheritor, Guangxi' },
+        { kind: 'p', textZh: '2021 年　文化和旅游部乡村文旅能人',
+          textEn: '2021 – Rural Cultural Tourism Talent, Ministry of Culture and Tourism' },
+        { kind: 'h', textZh: '工匠荣誉称号', textEn: 'Artisan Honorary Titles' },
+        { kind: 'p', textZh: '广西工艺美术大师',
+          textEn: 'Guangxi Master of Arts and Crafts' },
+        { kind: 'p', textZh: '柳州工匠 · 广西工匠',
+          textEn: 'Liuzhou Craftsman, Guangxi Craftsman' },
+        { kind: 'p', textZh: '自治区劳动模范 · 五一劳动奖章',
+          textEn: 'Autonomous Region Model Worker · May Day Labor Medal' },
+        { kind: 'p', textZh: '国家文旅文创特聘专家',
+          textEn: 'National Expert in Cultural Tourism and Creative Products' },
+        { kind: 'h', textZh: '作品专利成果', textEn: 'Works & Patents' },
+        { kind: 'p', textZh: '多项银饰作品获区市、全国工艺大奖；核心作品《银花丝绣球》获国家专利；中国—东盟博览会旅游展人气奖项。',
+          textEn: 'Numerous silver works have won regional, municipal, and national craft awards. The signature piece Silver Filigree Embroidered Ball has obtained a national patent and won the Popularity Award at the China-ASEAN Expo Tourism Exhibition.' }
+      ]
+    }
   ],
-  en: [
-    { eyebrow: '01 / THE INHERITOR', title: 'Ma Guibing', text: 'Third-generation Miao silversmith from Rongshui, Guangxi, with 30+ years of practice.' },
-    { eyebrow: '02 / SILVER CULTURE', title: 'Miao Silver Culture', text: 'Inscribed in 2006 on China\'s first national intangible cultural heritage list (No. Ⅷ-40).' },
-    { eyebrow: '03 / SEVEN CRAFTS', title: 'Seven Crafts', text: 'Smelting, forging, wire-drawing, chasing, filigree, soldering, and polishing — nearly 20 manual steps.' },
-    { eyebrow: '04 / MASTER WORKS', title: 'Master Works', text: 'Silver-Filigree Emball · Miao Brocade · Miao Headdress · Bauhinia · Huashan Rock Paintings.' },
-    { eyebrow: '05 / INHERITANCE', title: 'Inheritance', text: 'Open apprenticeship since 2012, plus regular in-school and community outreach.' },
-    { eyebrow: '06 / OUR PRACTICE', title: 'Our Practice', text: 'NWPU School of Foreign Languages · Zhan Xia Sheng Hua Project.' }
-  ]
+  endZh: '三十载炉火坚守，传承千年苗银技艺',
+  endEn: 'Thirty years by the forge, passing on a thousand-year-old Miao silver craft.'
 }
 
 // ——— 文创 ———

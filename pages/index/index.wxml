@@ -1,7 +1,7 @@
 <view class="home">
   <!-- HERO -->
   <view class="hero">
-    <image class="hero-bg" src="/assets/images/works/work-03-cover.jpg" mode="aspectFill" />
+    <image class="hero-bg" src="/assets/images/hero/cover-main.jpg" mode="aspectFill" />
     <view class="hero-mask"></view>
     <view class="hero-top">
       <view class="brand">錾下生花，苗银新语</view>
